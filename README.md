@@ -25,5 +25,27 @@ template/reference file for all other translations.
 4. Commit, push and create Pull Request
 5. Thanks ❤️
 
+## Using Quick i18n Studio
+
+### Adding a New Translation
+
+1. “Browse files”, upload `locales/en.json`
+2. In the action menu (⋯) for the English translation select “Clone language”
+3. Enter “Destination Filename”, e.g. `nl.json` and select “Exact Duplicate”
+
+   ![Add Translation](doc/clone-translation.png)
+
+4. Click “Create File”
+5. Translate strings
+6. After translation, click “Export” in the action menu (⋯)
+7. Put the downloaded  JSON file into the `locales/` directory and create a pull request.
+
+### Updating a Translation
+
+1. “Browse files”, upload `locales/en.json` and the other translation file, e.g. `/locales/de.json`.
+2. Translate strings
+3. After translation, click “Export” in the action menu (⋯)
+4. Put the downloaded JSON file back into the `locales/` directory and create a pull request.
+
 [Bikerouter.de]: https://bikerouter.de/
 [Quick i18n Studio]: https://www.quicki18n.studio/
