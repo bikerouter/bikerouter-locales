@@ -1,0 +1,756 @@
+{
+    "about": {
+        "hosted": "Bikerouter wird zur Verfügung gestellt von <a href=\"https://marcusjaschen.com/\" rel=\"noopener\" target=\"_blank\">Marcus Jaschen</a>. Kontakt: <a href=\"https://en.osm.town/@bikerouter\" rel=\"noopener\" target=\"_blank\" rel=\"me\">@bikerouter@en.osm.town</a>",
+        "imprint": "Impressum",
+        "introduction": "Bikerouter ist der perfekte Weg, um Bikerouten online zu planen und basiert auf BRouter-Web. <b>BRouter-Web ist ein Projekt von Norbert Renner,</b> die Routing-Engine <b>BRouter stammt von Arndt Brenschede.</b>",
+        "language-switch-reload": "(page will reload)",
+        "license": "Lizenzen und weitere Infos:",
+        "link-manual-de": "Handbuch 🇩🇪",
+        "link-manual-en": "Manual 🇬🇧",
+        "manual": "Das Handbuch zu Bikerouter entsteht hier:",
+        "privacy": "Datenschutzerklärung",
+        "routing-data": "Die Routingdaten werden aus <a href=\"https://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a> vier- bis fünf Mal täglich neu erstellt. Der Aktualisierungsstand der OpenStreetMap-Daten kann an den <a href=\"https://brouter.m11n.de/segments/\" target=\"_blank\">Datendateien</a> abgelesen werden (Zeitstempel in UTC).",
+        "support": "<strong>Du hast Fragen,</strong> die durch die Tipps noch nicht beantwortet wurden? Im <a href=\"https://www.mtb-news.de/forum/f/gps-geraete-gps-software-karten-und-routenplanung.173/\" rel=\"nofollow\" target=\"_blank\">bikerouter.de Support-Forum</a> bei MTB-News.de wird dir mit Sicherheit weitergeholfen! <small><mark>Bitte habe Verständnis, dass ich Support-Anfragen per E-Mail nicht mehr beantworten kann – der Zeitaufwand ist leider zu groß geworden.</mark></small>",
+        "title": "Über Bikerouter",
+        "title-routing-data": "Routing-Daten:",
+        "tooltip": "Mehr Informationen über Bikerouter anzeigen"
+    },
+    "about-local-profiles": {
+        "title": "Angepasste Routing-Profile",
+        "helptext1": "Du kannst deine Anpassungen an Routing-Profilen direkt in deinem Browser speichern und auch von dort wieder laden. Nicht mehr benötigte Profile kannst du jederzeit löschen.",
+        "helptext2": "Diese Anpassungen sind nur für dich sichtbar und nur im aktuell verwendeten Browser, nicht für andere Nutzer.",
+        "helptext3": "Wenn du deine eigenen Profile auf anderen Geräten verwenden möchtest, solltest du sie auf deinem Computer speichern. So hast du auch ein Backup, falls du deinen Browser einmal zurücksetzen musst.",
+        "helptext4": "Um angepasste Profile auf einen anderen Computer zu übertragen, kannst du die Exportfunktion für Einstellungen verwenden. Damit lassen sich alle wichtigen Bikerouter-Einstellungen einschließlich deiner angepassten Profile herunterzuladen. Auf dem neuen Computer importiere die heruntergeladene Datei mit der Importfunktion. Die Export- und Import-Schaltflächen findest du im Hauptmenü."
+    },
+    "credits": {
+        "boundaries": "Verwaltungsgrenzen: <a href=\"https://osm-boundaries.com\" target=\"_blank\">OSM-Boundaries</a>, <a href=\"https://overpass-api.de/\" class=\"overpass-url\" target=\"_blank\">Overpass API</a>",
+        "brouter": "BRouter",
+        "brouter-license": "<a target=\"_blank\" href=\"https://brouter.de/brouter\">BRouter</a> &copy; Arndt Brenschede",
+        "elevation-data": "Höhendaten",
+        "esri-license": "<a target=\"_blank\" href=\"http://goto.arcgisonline.com/maps/World_Imagery\">World Imagery</a> &copy; <a target=\"_blank\" href=\"https://www.esri.com/\">Esri</a>, Quellen: Esri, DigitalGlobe, Earthstar Geographics, CNES/Airbus DS, GeoEye, USDA FSA, USGS, Getmapping, Aerogrid, IGN, IGP und die GIS Benutzergemeinschaft",
+        "esri-tiles": "Esri World Imagery",
+        "map-data": "Kartendaten",
+        "map-tiles": "Kartendarstellung",
+        "nominatim": "Suchen mit <a href=\"https://wiki.openstreetmap.org/wiki/Nominatim\" target=\"_blank\" data-i18n=\"credits.nominatim\">Nominatim</a>",
+        "openstreetmap": "&copy; <a target=\"_blank\" href=\"https://www.openstreetmap.org/copyright\" >OpenStreetMap contributors</a> unter <a target=\"_blank\" href=\"https://opendatacommons.org/licenses/odbl/\" >ODbL</a>",
+        "pois": "Orte (POIs): <a href=\"https://overpass-api.de/\" class=\"overpass-url\" target=\"_blank\">Overpass API</a>",
+        "title": "Credits"
+    },
+    "export": {
+        "button-download": "Herunterladen",
+        "button-share": "Teilen",
+        "format_geojson": "GeoJSON",
+        "format_gpx": "GPX",
+        "include_waypoints": "Auch Wegpunkte speichern",
+        "route-from-to": "{{from}} -> {{to}} - {{distance}} km, {{ascend}} hm",
+        "route-loop": "{{from}} - {{distance}} km, {{ascend}} hm",
+        "title": "Route herunterladen",
+        "trackname": "Name",
+        "trackname-template": "Vorlagen:",
+        "trackname-template-date": "Datum",
+        "trackname-template-default": "Standard",
+        "turninstructions": "* Markierte Formate enthalten Abbiegehinweise"
+    },
+    "footer": {
+        "ascend": "Anstieg",
+        "beeline-warning": "Achtung: Keine Daten für gerade Linien,  interpolierte Werte",
+        "benchmark": {
+            "duration-last-request": "letzte:",
+            "explanation": "Benötigte Zeit der letzten Berechnung",
+            "explanation-counter-requests": "Anzahl berechnete Routensegmente seit letztem Laden der Seite",
+            "explanation-median": "Median der benötigten Zeit aller Routenberechnungen",
+            "number-of-requests": "Anfragen",
+            "title": "Benchmark"
+        },
+        "cost": "Kosten",
+        "distance": "Entfernung",
+        "elevation-chart": "Höhendiagramm ein-/ausblenden",
+        "energy-per-100km": "Energie pro 100 km",
+        "hours": "Stunden",
+        "hours-abbrev": "h",
+        "kilometer": "Kilometer",
+        "kilometer-abbrev": "km",
+        "kilowatthour": "Kilowattstunden",
+        "kilowatthour-abbrev": "kWh",
+        "mean-cost-factor": "durchschnittlicher Kostenfaktor",
+        "meter": "Meter",
+        "meter-abbrev": "m",
+        "no-elevation-data": "Keine Höhendaten für diese Route verfügbar",
+        "plain-ascend": "Höhenunterschied",
+        "stats-info": "Route zeichnen, um Statistiken zu sehen.",
+        "total-energy": "Gesamtenergie",
+        "travel-time": "Reisezeit"
+    },
+    "help": {
+        "keyboard-shortcuts": "Tastatur-Kurzbefehle",
+        "shortcut-about": "„Über“-Dialog anzeigen",
+        "shortcut-add-poi": "POI hinzufügen (Esc verlässt diesen Modus)",
+        "shortcut-color-coding": "Durch verschiedene Routeneinfärbungen wechseln",
+        "shortcut-delete-route": "Route löschen",
+        "shortcut-draw": "Route zeichnen",
+        "shortcut-elevation-profile": "Höhenprofil",
+        "shortcut-exit-draw": "Zeichenmodus verlassen",
+        "shortcut-export": "Route herunterladen",
+        "shortcut-fit-route-in-viewport": "Route in Fenster zentrieren",
+        "shortcut-help-dialog": "Hilfe-Dialog öffnen",
+        "shortcut-load-track": "Track laden",
+        "shortcut-load-track-as-route": "Track als Route laden",
+        "shortcut-locate": "Auf aktuelle Position zentrieren",
+        "shortcut-main-menu": "Hautpmenü",
+        "shortcut-move-map": "Karte verschieben",
+        "shortcut-mute-route": "Route vorübergehend ausblenden",
+        "shortcut-nogo": "Gesperrten Bereich zeichnen",
+        "shortcut-nogo-load": "Gesperrten Bereich laden",
+        "shortcut-profile-alternatives": "Alternative Routen auswählen",
+        "shortcut-profile-select": "Routingprofil auswählen",
+        "shortcut-reverse": "Route umkehren",
+        "shortcut-roundtrip-planner": "Rundkurs-Planer",
+        "shortcut-search": "Ortssuche",
+        "shortcut-share": "Route teilen",
+        "shortcut-sidebar-switch-tabs": "Reiter in Sidebar wechseln",
+        "shortcut-sidebar-toggle": "Sidebar zeigen/verstecken",
+        "shortcut-straight-line-append": "Luftlinie an Route anfügen",
+        "shortcut-straight-line-toggle": "Zwischen Luftlinie und berechneter Route wechseln",
+        "shortcut-undo": "Letzten Punkt von Route entfernen („rückgängig“)",
+        "shortcut-zoom-map": "Karte zoomen",
+        "title": "Hilfe"
+    },
+    "keyboard": {
+        "backspace": "Rücktaste",
+        "escape": "Escape",
+        "generic-shortcut": "{{action}} ({{key}} Taste)",
+        "shift": "Umschalt",
+        "shift-r": "Shift-R"
+    },
+    "keyboard-shortcuts": {
+        "title": "Tastatur-Kurzbefehle"
+    },
+    "layers": {
+        "add-base": "Basisebene hinzufügen",
+        "add-overlay": "Overlay hinzufügen",
+        "add-overpass": "Overpass-Abfrage hinzufügen",
+        "custom-layer-name-helptext": "Beispiel: OpenStreetMap",
+        "custom-layer-name-label": "Name der benutzerdefinierten Ebene",
+        "custom-layer-url-helptext-normal": "URL für normale Ebenen, z.B.: <code>https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</code>",
+        "custom-layer-url-helptext-overpass": "Overpass-Abfrage, z.B.: <code>nwr[shop]['diet:vegan']['diet:vegan'!=no];</code>",
+        "custom-layer-url-label": "URL/Abfrage der benutzerdefinierten Ebene",
+        "customize": "Ebenen anpassen",
+        "opacity-slider": "Regler für Deckkraft",
+        "opacity-slider-title": "Deckkraft einstellen",
+        "color-picker-title": "Farbe auswählen",
+        "opencampingmap": {
+            "category": {
+                "nudist": "FKK",
+                "standard": "Standard"
+            },
+            "homepage": "Homepage",
+            "internet_access": {
+                "wlan": "WLAN"
+            },
+            "label": {
+                "caravans": "🚐 Wohnmobile",
+                "category": "🏕️ Kategorie",
+                "drinking_water": "🚰 Trinkwasser",
+                "fee": "💰 Gebührenpflichtig",
+                "internet_access": "📶 Internet-Zugang",
+                "operator": "👷 Betreiber",
+                "parking": "🅿️ Parken",
+                "playground": "🎠 Spielplatz",
+                "power_supply": "⚡ Stromversorgung",
+                "restaurant": "🍽️ Restaurant",
+                "shower": "🚿 Duschen",
+                "sport": "🏅 Sport",
+                "static_caravans": "🚐 Dauercamper",
+                "tents": "🏕️ Zelte",
+                "toilets": "🚽 Toiletten",
+                "tourism": "🏞️ Typ",
+                "water_point": "🚰 Wasserstelle",
+                "wheelchair": "♿ Rollstuhlgerecht",
+                "wikidata": "🔗 Wikidata"
+            },
+            "no": "❌ Nein",
+            "tourism": {
+                "camp_site": "Campingplatz"
+            },
+            "yes": "✅ Ja"
+        },
+        "overpass-inspect-at-openstreetmap": "Auf OpenStreetMap untersuchen",
+        "overpass-loading-indicator": "Overpass API Abfrage läuft ...",
+        "overpass-osm": "OSM",
+        "overpass-table-key": "Key",
+        "overpass-table-value": "Value",
+        "remove-selection": "Auswahl entfernen"
+    },
+    "loadNogos": {
+        "defaultProperties": "Einstellungen",
+        "error": {
+            "invalid-default-nogo-radius": "Invalid default nogo radius.",
+            "invalid-nogo-buffering-radius": "Invalid nogo buffering radius.",
+            "loading-file-error": "Could not load file: {{err}}.",
+            "loading-file-too-big": "Too many nogo areas in this file! Please simplify the geometry and/or reduce the number of zones.",
+            "loading-file-unexpected": "Unexpected error when loading this file.",
+            "missing-default-nogo-weight": "Missing default nogo weight.",
+            "missing-file-url": "Missing file or URL.",
+            "no-valid-area": "No valid area found in provided input."
+        },
+        "file": "Datei (.geojson)",
+        "load": "Laden",
+        "nogoBuffer": "Puffer um Linien und Flächen (in Meter)",
+        "nogoRadius": "Radius für Punkte (Meter)",
+        "source": "Quelle",
+        "title": "No-Go-Areas laden",
+        "upload-label": "Datei hochladen",
+        "url": "URL",
+        "url-help": "GeoJSON-Datei welche Punkte, Linien oder Polygone enthält."
+    },
+    "map": {
+        "attribution-osm-long": "OpenStreetMap-Mitwirkende",
+        "attribution-osm-short": "OpenStreetMap",
+        "clear-route": "Routendaten löschen",
+        "copyright": "Copyright",
+        "cycling": "Radfahren",
+        "delete-last-point": "Letzten Punkt löschen",
+        "delete-nogo-areas": "Alle No-go-Areas löschen",
+        "delete-pois": "Alle POI löschen",
+        "delete-route": "Route löschen",
+        "create-round-trip": "Rundkurs erstellen",
+        "draw-circlego-start": "Bewegungsradius durch Klick auf Wohnsitz ermitteln - ohne Gewähr",
+        "draw-circlego-stop": "Bewegungsradius ermitteln stoppen",
+        "draw-poi-start": "POI einzeichnen",
+        "draw-poi-stop": "Einzeichnen der POI beenden",
+        "draw-route-start": "Route zeichnen",
+        "draw-route-stop": "Route Zeichnen beenden",
+        "enter-poi-name": "POI-Namen eingeben",
+        "geocoder": "Suche",
+        "geocoder-placeholder": "Suche...",
+        "hikebike-hillshading": "Höhenschummerung",
+        "hiking": "Wandern",
+        "layer": {
+            "bing": "Bing Luftbild",
+            "cycle": "OpenCycleMap (Thunderf.)",
+            "cycling": "Radfahren (markierte Routen)",
+            "digitalglobe": "DigitalGlobe neueste Bilder",
+            "esri": "Esri Weltbilder",
+            "gravel-overlay": "bikerouter.de Gravel Overlay",
+            "hikebike-hillshading": "Höhenschummerung (Hike & Bike Map)",
+            "hiking": "Wandern (markierte Routen)",
+            "hillshading": "Höhenschummerung",
+            "hillshading-mapterhorn": "Höhenschummerung",
+            "hillshading-opaque": "Höhenschummerung (deckend)",
+            "osm": "OpenStreetMap",
+            "osmde": "OpenStreetMap.de",
+            "outdoors": "Outdoor (Thunderforest)",
+            "route-quality": "Routenqualitätscodierung",
+            "stamen-terrain": "Terrain (Stamen)",
+            "strava-segments": "Strava Segmente",
+            "topo": "OpenTopoMap"
+        },
+        "loading": "Lade...",
+        "locate-me": "Meinen Standort anzeigen",
+        "nogo": {
+            "cancel": "No-Go-Areas löschen",
+            "click-drag": "Klicken und ziehen zum Zeichnen eines Kreises",
+            "click-touch": "Kreis durch Klick auf Karte erstellen",
+            "draw": "Kreisförmige No-Go-Area zeichnen",
+            "edit": "Klicken zum Bearbeiten",
+            "help": "&square; = Bewegen / Größe anpassen, <span class=\"fa fa-trash-o\"></span> = Löschen,<br>Kreis anklicken um Bearbeiten zu beenden"
+        },
+        "not-applicable-here": "hier nicht anwendbar",
+        "opacity-slider": "Transparenz von Route und Markern anpassen",
+        "opacity-slider-shortcut": "{{action}}\n(Taste {{key}} drücken und halten, um Route vorübergehend auszublenden)",
+        "open-osm": "OSM",
+        "preview": "Vorschau",
+        "privacy": "Datenschutz",
+        "reverse-route": "Route umkehren",
+        "route-maxspeed": "Höchstgeschwindigkeit",
+        "route-quality-altitude": "Höhencodierung",
+        "route-quality-cost": "Kostencodierung",
+        "route-quality-incline": "Steigungscodierung",
+        "route-quality-shortcut": "{{action}} ({{key}} Taste zum Ein-/Ausschalten)",
+        "route-quality-surface": "Wegoberfläche/Qualität",
+        "route-tooltip-segment": "Ziehen um neuen Wegpunkt zu erstellen. Klicken um auf gerade Linie umzuschalten.",
+        "route-tooltip-waypoint": "Wegpunkt. Zum Verschieben ziehen; zum Löschen klicken",
+        "strava-biking": "Zeige Strava Radfahrsegmente",
+        "strava-running": "Zeige Strava Läufersegmente",
+        "strava-shortcut": "{{action}}\n({{key}} Taste um Ebene ein-/auszublenden, Klicken um aktuellen Ausschnitt neu zu laden)",
+        "toggle-beeline": "Gerade Linie ein-/ausschalten",
+        "zoomInTitle": "Hineinzoomen",
+        "zoomOutTitle": "Herauszoomen"
+    },
+    "modal": {
+        "add": "Hinzufügen",
+        "close": "Schließen",
+        "or": "oder"
+    },
+    "navbar": {
+        "about": "Info",
+        "alternative": {
+            "option": {
+                "first": "Alternative 1",
+                "info": "Routenalternative berechnen",
+                "original": "Originalroute",
+                "second": "Alternative 2",
+                "third": "Alternative 3"
+            }
+        },
+        "alternative-label": "Alternative Route",
+        "button-route-alternative": {
+            "alternative-1": "Alternative Routenberechnung 1 (Shift-1)",
+            "alternative-2": "Alternative Routenberechnung 2 (Shift-2)",
+            "alternative-3": "Alternative Routenberechnung 3 (Shift-3)",
+            "original": "Originale Route (Shift-0)"
+        },
+        "export": "Herunterladen",
+        "export-tooltip": "Route herunterladen",
+        "load": {
+            "nogos": "No-go-Areas laden",
+            "title": "Laden",
+            "tooltip": "{{tracksAction}} ({{tracksKey}} Taste)\n{{trackAsRouteAction}} ({{trackAsRouteKey}})\n{{nogosAction}} ({{nogosKey}})",
+            "tracks": "Track laden"
+        },
+        "profile": {
+            "Fastbike-lowtraffic-tertiaries": "Rennrad (sehr wenig Verkehr) ⭐️⭐️⭐️",
+            "fastbike-verylowtraffic": "Rennrad (sehr wenig Verkehr, Alternative) ️⭐️⭐️",
+            "fastbike-lowtraffic": "Rennrad (weniger Verkehr) ⭐️",
+            "fastbike": "Rennrad ⭐️",
+            "m11n-gravel-pre": "Gravel „m11n“ (mehr offroad, beta) ⭐️⭐️⭐️⭐️",
+            "m11n-gravel": "Gravel „m11n“ (mehr offroad) ⭐️⭐️⭐️",
+            "quaelnix-gravel": "Gravel „quaelnix“ (wenig Verkehr)",
+            "cxb-gravel": "Gravel „CXB“ (mehr offroad) ⭐️⭐️",
+            "Trekking-tracks": "Gravel (schnell) ⭐️⭐️",
+            "mtb-zossebart": "MTB „Zossebart“ ⭐️⭐️",
+            "mtb-zossebart-hard": "MTB „Zossebart“ (hart) ⭐️⭐️",
+            "MTB": "MTB standard ⭐",
+            "MTB-light": "MTB leicht ⭐",
+            "trekking": "Trekkingrad ⭐⭐",
+            "car-eco": "Auto (effizient)",
+            "car-fast": "Auto (schnell)",
+            "car-vario": "Auto (vario)",
+            "car-test": "Auto (Test)",
+            "dummy": "Dummy (leer)",
+            "custom": "Benutzerdefiniert",
+            "fastbike-asia-pacific": "Rennrad (Asien Pazifik)",
+            "hiking-beta": "Wandern (beta)",
+            "hiking-mountain": "Wandern",
+            "moped": "Moped",
+            "rail": "Eisenbahn",
+            "randonneur": "Randonneur",
+            "river": "Fluss",
+            "safety": "Sicherste Route",
+            "shortest": "Kürzeste Route",
+            "ffmbb-long-distance-cycling": "FFMbyBicycle Long Distance",
+            "trekking-ignore-cr": "Trekkingrad (ignoriere Radrouten)",
+            "trekking-noferries": "Trekkingrad (keine Fähren)",
+            "trekking-nosteps": "Trekkingrad (keine Treppen)",
+            "trekking-steep": "Trekkingrad (steil)",
+            "velomobil-touristic": "Velomobil touristisch",
+            "vm-forum-liegerad-schnell": "Liegerad (schnell)",
+            "vm-forum-velomobil-schnell": "Velomobil (schnell)",
+            "vm-forum-velomobil-touristisch": "Velomobil (touristisch)",
+            "MTB-light-wet": "MTB leicht, nass",
+            "MTB-wet": "MTB nass",
+            "reroute-zossebart": "Re-Routing (Zossebart)",
+            "Trekking-dry": "Trekking-dry",
+            "Trekking-Fast-wet": "Trekking-Fast-wet",
+            "Trekking-Fast": "Trekking-Fast",
+            "Trekking-FCR-dry": "Trekking-FCR-dry",
+            "Trekking-FCR-wet": "Trekking-FCR-wet",
+            "Trekking-hilly-paths": "Trekking-hilly-paths",
+            "Trekking-ICR-dry": "Trekking-ICR-dry",
+            "Trekking-ICR-wet": "Trekking-ICR-wet",
+            "Trekking-LCR-dry": "Trekking-LCR-dry",
+            "Trekking-LCR-wet": "Trekking-LCR-wet",
+            "Trekking-MTB-light-wet": "Trekking-MTB-light-wet",
+            "Trekking-MTB-light": "Trekking-MTB-light",
+            "Trekking-MTB-medium-wet": "Trekking-MTB-medium-wet",
+            "Trekking-MTB-medium": "Trekking-MTB-medium",
+            "Trekking-MTB-strong-wet": "Trekking-MTB-strong-wet",
+            "Trekking-MTB-strong": "Trekking-MTB-strong",
+            "Trekking-No-Flat": "Trekking-No-Flat",
+            "Trekking-SmallRoads-wet": "Trekking-SmallRoads-wet",
+            "Trekking-SmallRoads": "Trekking-SmallRoads",
+            "Trekking-Tertiaries": "Trekking-Tertiaries",
+            "Trekking-valley": "Trekking-valley",
+            "Trekking-wet": "Trekking-wet"
+        },
+        "profile-tooltip": "\n({{key}} Taste zum Umschalten)",
+        "share": "Teilen",
+        "share-tooltip": "Route teilen",
+        "support": "Support ❤️",
+        "supporters": "Hall of Fame",
+        "tips": "Tipps und Tricks"
+    },
+    "roundtrip": {
+        "title": "Rundkurs-Planer",
+        "intro": "Setze einen Startpunkt auf der Karte, gib Radius und Richtung des Rundkurses an und klicke dann auf die Schaltfläche „Rundkurs planen“.",
+        "radius": " Radius",
+        "heading": "Richtung",
+        "heading-label": {
+            "N": "N",
+            "NE": "NO",
+            "E": "O",
+            "SE": "SO",
+            "S": "S",
+            "SW": "SW",
+            "W": "W",
+            "NW": "NW"
+        },
+        "message-create-waypoint": "Bitte einen Startpunkt auf der Karte setzen",
+        "presets": "Vorlagen:",
+        "submit": "Rundkurs planen"
+    },
+    "searchfav": {
+        "addfavorite": "Als Favorit speichern",
+        "ask_removeall": "Alle Suchfavoriten löschen?",
+        "export": "Suchfavoriten exportieren",
+        "import": "Suchfavoriten importieren",
+        "openfavorites": "Suchfavoriten zeigen",
+        "removeall": "Alle Suchfavoriten löschen"
+    },
+    "share": {
+        "about-shortlinks": "über Shortlinks",
+        "button-download": "Herunterladen",
+        "create-shortlink": "Link und QR-Code erstellen",
+        "error-creating-shortlink": "Kurzlink konnte nicht erstellt werden :-|",
+        "indicator-creating-shortlink": "Erstelle Kurzlink …",
+        "info-link-bookmark": "Du kannst auch jederzeit den aktuellen Link aus der Adresszeile des Browsers teilen oder in den Bookmarks speichern.",
+        "info-link-server-storage": "Wenn du auf die Schaltfläche „Link und QR-Code erstellen“ klickst, wird die aktuelle Route auf dem Server von bikerouter.de gespeichert, sodass sie später über den generierten Kurzlink aufgerufen werden kann.",
+        "introduction": "Teile diese Route per QR-Code oder Copy und Paste. Der QR-Code öffnet die Route auf deinem Smartphone zum Anschauen, Ändern oder Herunterladen.",
+        "mastodon-enter-server-name": "Name/Domain deines Mastodon-Servers",
+        "title": "Route teilen",
+        "tooltip-email": "Per E-Mail teilen",
+        "tooltip-facebook": "Auf Facebook teilen",
+        "tooltip-mastodon": "Auf Mastodon teilen",
+        "tooltip-whatsapp": "Mit WhatsApp teilen"
+    },
+    "sidebar": {
+        "analysis": {
+            "data": {
+                "highway": {
+                    "footway": "Gehweg",
+                    "path": "Weg/Pfad (keine Kfz)",
+                    "residential": "Straße in Wohngebieten",
+                    "cycleway": "Radweg",
+                    "track": "Feld-/Waldweg",
+                    "Track grade1": "Feld-/Waldweg Klasse 1 (befestigt)",
+                    "Track grade2": "Feld-/Waldweg Klasse 2 (wassergebunden)",
+                    "Track grade3": "Feld-/Waldweg Klasse 3 (teilweise lose)",
+                    "Track grade4": "Feld-/Waldweg Klasse 4 (überwiegend lose)",
+                    "Track grade5": "Feld-/Waldweg Klasse 5 (lose)",
+                    "service": "Erschließungsweg",
+                    "tertiary": "Kreisstraße",
+                    "secondary": "Landesstraße",
+                    "primary": "Bundesstraße",
+                    "trunk": "Autobahnähnliche Straße",
+                    "motorway": "Autobahn",
+                    "motorway_link": "Autobahn-Zubringer",
+                    "primary_link": "Anschlussstelle Bundesstraße",
+                    "secondary_link": "Auf-/Abfahrt Landesstraße",
+                    "tertiary_link": "Auf-/Abfahrt Kreisstraße",
+                    "trunk_link": "Anschlussstelle Schnellstraße",
+                    "living_street": "Verkehrsberuhigter Bereich",
+                    "pedestrian": "Fußgängerzone",
+                    "road": "allgemeine Straße",
+                    "bridleway": "Reitweg",
+                    "steps": "Stufen",
+                    "sidewalk": "Bürgersteig",
+                    "crossing": "Übergang",
+                    "unclassified": "Nebenstraße"
+                },
+                "surface": {
+                    "asphalt": "Asphalt",
+                    "cobblestone": "Kopfsteinpflaster",
+                    "compacted": "Verdichtet",
+                    "dirt": "unbefestigt",
+                    "fine_gravel": "Splitt",
+                    "grass": "Gras",
+                    "gravel": "Gravel, Schotter",
+                    "ground": "naturbelassen",
+                    "paved": "befestigt",
+                    "sand": "Sand",
+                    "unpaved": "ohne Belag",
+                    "woodchips": "Hackschnitzel aus Holz",
+                    "concrete": "Beton",
+                    "paving_stones": "Pflastersteine",
+                    "sett": "Behauenes Pflaster"
+                },
+                "smoothness": {
+                    "excellent": "sehr gut",
+                    "good": "gut",
+                    "intermediate": "in Ordnung",
+                    "bad": "rau",
+                    "very_bad": "sehr schlecht",
+                    "horrible": "furchtbar",
+                    "very_horrible": "kaum befahrbar",
+                    "impassable": "nicht befahrbar"
+                },
+                "maxspeed": "{{maxspeed}} km/h"
+            },
+            "header": {
+                "highway": "Weg",
+                "maxspeed": "Höchstgeschwindigkeit",
+                "smoothness": "Beschaffenheit",
+                "surface": "Material"
+            },
+            "legend": {
+                "gradient": "Steigung",
+                "highway": "Wegart",
+                "surface": "Oberfläche",
+                "smoothness": "Beschaffenheit",
+                "maxspeed": "Höchstgeschwindigkeit",
+                "cost": "Routingkosten"
+            },
+            "table": {
+                "category": "Art",
+                "length": "Länge",
+                "total_known": "Gesamt bekannt:",
+                "unknown": "Unbekannt"
+            },
+            "title": "Analyse",
+            "tooltip": "Route analysieren"
+        },
+        "button": {
+            "about": "Über/Info"
+        },
+        "card": {
+            "alternative": {
+                "help1": "bikerouter.de berechnet für dich bis zu drei Alternativrouten zwischen den Wegpunkten. Das funktioniert umso besser, je weniger Wegpunkte du setzt.",
+                "original": {
+                    "title": "Original Routenberechnung (Shift-0)",
+                    "label": "Original"
+                },
+                "alternative-1": {
+                    "title": "Alternativroute 1 (Shift-1)",
+                    "label": "1"
+                },
+                "alternative-2": {
+                    "title": "Alternativroute 2 (Shift-2)",
+                    "label": "2"
+                },
+                "alternative-3": {
+                    "title": "Alternativroute 3 (Shift-3)",
+                    "label": "3"
+                },
+                "title": "Zeige mir Alternativrouten:"
+            },
+            "export": {
+                "button": {
+                    "download": {
+                        "title": "Route herunterladen als GPX, FIT, KML usw.",
+                        "label": "Herunterladen"
+                    },
+                    "share": {
+                        "title": "Route teilen als Kurzlink, QR Code, WhatsApp usw.",
+                        "label": "Teilen"
+                    }
+                },
+                "help1": "Lade deine Route für die Navigation herunter, zum Beispiel als GPX-Datei (Shortcut <kbd>X</kbd>).",
+                "help2": "Gib einfach den Link der Route zum Teilen weiter oder speichere ihn in deinen Lesezeichen (Shortcut <kbd>A</kbd>).",
+                "title": "Route herunterladen und teilen"
+            },
+            "import": {
+                "button": {
+                    "nogo-load": {
+                        "title": "No-Go-Regionen aus GeoJSON laden (Shift-N)",
+                        "label": "No-Go-Regionen laden"
+                    },
+                    "track-load": {
+                        "title": "GPX Track, KML-Datei oder GeoJSON laden und auf der Karte anzeigen (Shortcut: O)",
+                        "label": "Track laden"
+                    },
+                    "track-load-as-route": {
+                        "title": "GPX-Track laden und automatisch Route erstellen (Shift-O)",
+                        "label": "Track als Route laden"
+                    }
+                },
+                "help1": "Lade einen GPX-Track (oder auch GeoJSON, KML usw.) und zeige ihn auf der Karte an (Shortcut<kbd>O</kbd>).",
+                "help2": "Du kannst auch einen GPX-Track in eine Route konvertieren und direkt weiterplanen. (Shortcut<kbd>Shift</kbd>&nbsp;<kbd>O</kbd>).",
+                "help3": "Hast du No-Go-Areas als GeoJSON-Datei, kannst du diese auch einfach importieren (Shortcut<kbd>Shift</kbd>&nbsp;<kbd>N</kbd>).",
+                "title": "Daten importieren"
+            },
+            "profile": {
+                "button": {
+                    "gravel": "Gravel",
+                    "mtb": "MTB",
+                    "roadbike": "Rennrad",
+                    "safest": "Sicherste Route",
+                    "shortest": "Kürzeste Route",
+                    "trekking": "Trekking"
+                },
+                "help1": "Die beliebesten Routing-Profile kannst du mit einem Klick auf die Schaltflächen auswählen.",
+                "help2": "Wenn dir das nicht zusagt, kannst du im Auswahlfeld aus vielen verschiedenen Routingprofilen wählen – so findest du auf jeden Fall die passende Route für deinen Fahrstil.",
+                "help3": "Tipp: Probiere einfach die verschiedenen Routingprofile auf bekannten Strecken aus, dann siehst du schnell welches dir entgegen kommt.",
+                "label-more": "Mehr Routingprofile:",
+                "label-popular": "Von dir meist genutzt:",
+                "title": "Ich möchte gerne fahren:"
+            },
+            "stats": {
+                "title": "Die Route im Überblick",
+                "docs-link": "https://docs.bikerouter.de/de/route-analysieren/",
+                "help1": "Viele (!) weitere Auswertungsmöglichkeiten findest du in der Sidebar auf der rechten Seite",
+                "help2": "Alles über die Möglichkeiten zur Auswertung lesen",
+                "label": {
+                    "distance": "Distanz",
+                    "duration": "Fahrzeit",
+                    "elevation-max": "max. Höhe",
+                    "ascend": "Anstieg",
+                    "plain-ascend": "absolut",
+                    "button-elevation-profile": "Höhenprofil"
+                }
+            },
+            "settings": {
+                "button": {
+                    "export": "Exportieren",
+                    "import": "Importieren"
+                },
+                "help1": "Durch das Aktivieren von „Messungen auf der Karte“ wird am linken Bildschirmrand eine Schaltfläche hinzugefügt, mit der sich Entfernungen und Peilwinkel auf der Karte messen lassen.",
+                "help2": "Die Farbe und die Randfarbe der Routenlinie können eingestellt werden. Durch einen Klick auf das farbige Quadrat öffnet sich der Farbwähler.",
+                "help3": "Die aktuellen Einstellungen (Ebenen, Farben, angepasste Routenprofile usw.) können heruntergeladen werden. Die Datei kann später wieder hochgeladen werden, um die Einstellungen wieder herzustellen. Auch lassen sich so Einstellungen auf einen anderen Rechner übertragen.",
+                "title": "Einstellungen",
+                "subtitle": {
+                    "data-management": "Einstellungen sichern"
+                },
+                "label": {
+                    "enable-measurements": "Messungen auf der Karte aktivieren",
+                    "route-color": "Farbe der Routenlinie",
+                    "route-casing-color": "Randfarbe der Routenlinie"
+                }
+            },
+            "support": {
+                "button": {
+                    "hall-of-fame": {
+                        "label": "Hall of Fame",
+                        "title": "Leute, die Bikerouter unterstützt haben."
+                    },
+                    "support": {
+                        "label": "Unterstützen",
+                        "title": "Sieh dir an, wie du bikerouter.de unterstützen kannst"
+                    }
+                },
+                "title": "bikerouter.de unterstützen"
+            }
+        },
+        "customize-profile": {
+            "title": "Profil personalisieren",
+            "tooltip": "Profil anpassen",
+            "delete-confirm": "Möchtest du das ausgewählte Profile löschen?",
+            "delete-local-profile": "Ausgewähltes Profil löschen",
+            "info-local-profile": "Über angepasste Profile",
+            "load-local-profile": "Gespeichertes Profil laden",
+            "select-local-profile": "Profil laden …",
+            "save-local-profile": "Angepasstes Profil im Browser speichern",
+            "save-prompt": "Bitte einen Namen für das Profil eingeben"
+        },
+        "data": {
+            "sync-map": "Karte synchronisieren",
+            "title": "Daten",
+            "tooltip": "Detaillierte Datentabelle der Route anzeigen"
+        },
+        "itinerary": {
+            "title": "Reiseroute",
+            "tooltip": "Reiseplan anzeigen"
+        },
+        "layers": {
+            "category": {
+                "base-layers": "Grundkarten",
+                "country": "Land",
+                "europe": "Europa",
+                "europe-monolingual": "Europa einsprachig",
+                "overlays": "Überlagerungen",
+                "overpass": "Orte (POIs)",
+                "worldwide": "Weltweit",
+                "worldwide-international": "Weltweit international",
+                "worldwide-monolingual": "Weltweit einsprachig"
+            },
+            "collapse": "Alle zusammenklappen",
+            "custom-layers": "Benutzerdefinierte Ebenen",
+            "customize": "Benutzerdefinierte Ebenen hinzufügen oder entfernen",
+            "expand": "Alle ausklappen",
+            "optional": "Optionale Ebenen hinzufügen oder entfernen",
+            "optional-layers": "Mehr",
+            "overlay-opacity": "Transparenz der Überlagerung",
+            "overlay-opacity_plural": "Transparenz der Überlagerung",
+            "single-opacity": "Deckkraft-Regler für einzelne Ebenen",
+            "table": {
+                "URL": "URL/Abfrage",
+                "empty": "Noch keine benutzerdefinierte Ebene definiert.",
+                "name": "Name",
+                "type": "Typ",
+                "type_layer": "Ebene",
+                "type_overlay": "Überlagerung",
+                "type_overpass_query": "Overpass"
+            },
+            "title": "Ebenen",
+            "tooltip": "Ebenen auswählen"
+        },
+        "profile": {
+            "apply": "Anwenden",
+            "clear": "Zurücksetzen",
+            "help": "Hilfe",
+            "no_easy_configuration_warning": "Für dieses Profil steht keine einfache Konfiguration zur Verfügung.",
+            "options": "Optionen",
+            "placeholder": "Hier benutzerdefiniertes Profil erstellen.",
+            "profile": "Profil"
+        },
+        "tab-tooltip": "{{action}}\n({{toggleKey}} Taste zum Ein-/Ausblenden, {{switchKey}} um zum nächsten Tab zu schalten)",
+        "waypoints": {
+            "btn-reset": "Routing zurücksetzen",
+            "btn-routing-options": "Routing-Einstellungen",
+            "link-openstreetmap": "OpenStreetMap",
+            "split-from-here": "Neue Route ab hier",
+            "split-to-here": "Neue Route bis hier",
+            "label-profile": "Routing-Einstellungen:",
+            "label-alternative": "Routenalternative:",
+            "title": "Wegpunkte",
+            "value-profile-default": "Standard (globale Einstellung)",
+            "value-profile-alternative-default": "Standard (globale Einstellung)",
+            "beeline": "Luftlinie"
+        }
+    },
+    "trackasroute": {
+        "browse": "Durchsuchen",
+        "explainpoi": "(Wegpunkte als POIs anzeigen)",
+        "explaintracklayer": "(Tour als separate Ebene anzeigen)",
+        "file": "Track-Datei",
+        "file-description": "Unterstützte Formate: GPX, KML, GeoJSON",
+        "number-of-via-points": "Anzahl Wegpunkte",
+        "processing-message": "Einen Moment bitte … 🧑‍🏭",
+        "showpois": "POIs",
+        "title": "Track als Route laden",
+        "tracklayer": "Tour-Ebene"
+    },
+    "warning": {
+        "cannot-get-route": "Fehler beim Abrufen der Routen-URL",
+        "invalid-route-from": "Die Startmarkierung ist zu weit von der Route entfernt.",
+        "invalid-route-to": "Die Zielmarkierung ist zu weit von der Route entfernt.",
+        "no-response": "Keine Antwort vom Server",
+        "no-route-found": "Fehler: kann für angegebene Punkte keine Route finden. Vielleicht die Punkte näher an Straßen verschieben?",
+        "profile-error": "Profil-Fehler: keine oder leere Antwort vom Server",
+        "strava-error": "Fehler beim Laden der Strava Segmente: {{error}}",
+        "temporary-profile": "<strong>Hinweis:</strong> Hochgeladene benutzerdefinierte Profile werden nur vorübergehend auf dem Server zwischengespeichert.<br/>Bitte Bearbeitungen auf deinem Rechner speichern oder die Funktionen zum Verwalten von angepassten Profilen direkt hier drunter nutzen.",
+        "tracks-load-error": "Fehler beim Laden von tracks: {{error}}",
+        "upload-error": "Fehler beim Hochladen: {{error}}"
+    },
+    "whatsnew": {
+        "dont-show-again": "Für diese Version nicht mehr anzeigen",
+        "new-version": "✨ Seit dem letzten Besuch wurde eine neue Version veröffentlicht!",
+        "show-changes": "Änderungen anzeigen",
+        "title": "Was ist neu?",
+        "type-added": "Neu",
+        "type-changed": "Geändert",
+        "type-fixed": "Behoben",
+        "type-info": "Info",
+        "type-removed": "Entfernt",
+        "full-changelog": "Das gesamte Änderungsprotokoll anzeigen"
+    },
+    "measure": {
+        "finish": "Klicken, um Messung zu <b>beenden</b><br>",
+        "delete": "Umschalttaste drücken und klicken um Punkt zu <b>löschen</b>",
+        "move": "Klicken und ziehen um Punkt zu <b>verschieben</b><br>",
+        "resume": "<br>Strg/Ctrl- oder ⌘-Taste drücken und klicken um Messung <b>fortzusetzen</b>",
+        "add": "Strg/Ctrl- oder ⌘-Taste drücken und klicken um <b>Punkt hinzuzufügen</b>",
+        "enable": "Messung starten",
+        "disable": "Messung beenden und von Karte löschen",
+        "clear": "Messung von Karte löschen"
+    }
+}
