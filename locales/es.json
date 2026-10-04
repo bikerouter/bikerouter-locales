@@ -668,7 +668,8 @@
         "button": {
             "about": "Acerca de",
             "whats-new": "¿Qué hay de nuevo?",
-            "settings": "Ajustes"
+            "settings": "Ajustes",
+            "language": "Elegir idioma"
         },
         "card": {
             "alternative": {
@@ -907,13 +908,20 @@
         "forum-thread": "Foro de Bikerouter en MTB-News.de",
         "mastodon": "@bikerouter en Mastodon",
         "dont-show-again": "No volver a mostrar para esta versión",
+        "dont-show-again-post": "No volver a mostrar para esta publicación",
+        "dont-show-again-update": "No volver a mostrar para estas actualizaciones",
         "new-version": "✨ ¡Se ha publicado una nueva versión desde tu última visita!",
+        "new-post": "✨ ¡Se ha publicado una nueva publicación desde tu última visita!",
+        "new-version-and-post": "✨ ¡Se han publicado una nueva versión y una nueva publicación desde tu última visita!",
         "show-changes": "Mostrar cambios",
+        "show-post": "Leer publicación",
+        "show-updates": "Mostrar actualizaciones",
         "title": "¿Qué hay de nuevo?",
         "type-added": "Añadido",
         "type-changed": "Modificado",
         "type-fixed": "Corregido",
         "type-info": "Información",
+        "type-post": "Publicación",
         "type-removed": "Eliminado",
         "full-changelog": "Mostrar historial completo de cambios"
     },

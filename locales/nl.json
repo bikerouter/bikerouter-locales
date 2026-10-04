@@ -668,7 +668,8 @@
         "button": {
             "about": "Over",
             "whats-new": "Wat is er nieuw?",
-            "settings": "Instellingen"
+            "settings": "Instellingen",
+            "language": "Taal kiezen"
         },
         "card": {
             "alternative": {
@@ -907,13 +908,20 @@
         "forum-thread": "Bikerouter-forum op MTB-News.de",
         "mastodon": "@bikerouter op Mastodon",
         "dont-show-again": "Niet meer tonen voor deze versie",
+        "dont-show-again-post": "Niet meer tonen voor dit bericht",
+        "dont-show-again-update": "Niet meer tonen voor deze updates",
         "new-version": "✨ Er is een nieuwe versie uitgebracht sinds je laatste bezoek!",
+        "new-post": "✨ Er is een nieuw bericht gepubliceerd sinds je laatste bezoek!",
+        "new-version-and-post": "✨ Er is een nieuwe versie en een nieuw bericht gepubliceerd sinds je laatste bezoek!",
         "show-changes": "Wijzigingen tonen",
+        "show-post": "Bericht lezen",
+        "show-updates": "Updates tonen",
         "title": "Wat is er nieuw?",
         "type-added": "Toegevoegd",
         "type-changed": "Gewijzigd",
         "type-fixed": "Opgelost",
         "type-info": "Info",
+        "type-post": "Bericht",
         "type-removed": "Verwijderd",
         "full-changelog": "Volledig wijzigingsoverzicht tonen"
     },
