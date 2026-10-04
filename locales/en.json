@@ -668,7 +668,8 @@
         "button": {
             "about": "About",
             "whats-new": "What's new?",
-            "settings": "Settings"
+            "settings": "Settings",
+            "language": "Choose language"
         },
         "card": {
             "alternative": {
@@ -907,13 +908,20 @@
         "forum-thread": "Bikerouter Forum on MTB-News.de",
         "mastodon": "@bikerouter on Mastodon",
         "dont-show-again": "Don't show again for this version",
+        "dont-show-again-post": "Don't show again for this post",
+        "dont-show-again-update": "Don't show again for these updates",
         "new-version": "✨ A new version was released since your last visit!",
+        "new-post": "✨ A new post was published since your last visit!",
+        "new-version-and-post": "✨ A new version and a new post were published since your last visit!",
         "show-changes": "Show Changes",
+        "show-post": "Read Post",
+        "show-updates": "Show Updates",
         "title": "What's New?",
         "type-added": "Added",
         "type-changed": "Changed",
         "type-fixed": "Fixed",
         "type-info": "Info",
+        "type-post": "Post",
         "type-removed": "Removed",
         "full-changelog": "Show full changelog"
     },
