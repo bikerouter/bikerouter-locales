@@ -1,15 +1,17 @@
 {
     "about": {
-        "hosted": "Bikerouter wird zur Verfügung gestellt von <a href=\"https://marcusjaschen.com/\" rel=\"noopener\" target=\"_blank\">Marcus Jaschen</a>. Kontakt: <a href=\"https://en.osm.town/@bikerouter\" rel=\"noopener\" target=\"_blank\" rel=\"me\">@bikerouter@en.osm.town</a>",
+        "hosted": "Bikerouter wird entwickelt und zur Verfügung gestellt von <a href=\"https://marcusjaschen.com/\" rel=\"noopener\" target=\"_blank\">Marcus Jaschen</a>. Kontakt: <a href=\"https://en.osm.town/@bikerouter\" rel=\"noopener\" target=\"_blank\" rel=\"me\">@bikerouter@en.osm.town</a>",
         "imprint": "Impressum",
-        "introduction": "Bikerouter ist der perfekte Weg, um Bikerouten online zu planen und basiert auf BRouter-Web. <b>BRouter-Web ist ein Projekt von Norbert Renner,</b> die Routing-Engine <b>BRouter stammt von Arndt Brenschede.</b>",
-        "language-switch-reload": "(page will reload)",
+        "introduction": "Bikerouter ist der perfekte Weg, um Bikerouten online zu planen und basiert auf BRouter und BRouter-Web. <b>BRouter-Web ist ein Projekt von Norbert Renner,</b> die Routing-Engine <b>BRouter stammt von Arndt Brenschede.</b>",
+        "language-switch-label": "bikerouter.de auf",
+        "language-switch-more": "Weitere Sprachen…",
+        "language-switch-reload": "(Seite lädt neu)",
         "license": "Lizenzen und weitere Infos:",
         "link-manual-de": "Handbuch 🇩🇪",
-        "link-manual-en": "Manual 🇬🇧",
+        "link-manual-en": "Manual 🇪🇺",
         "manual": "Das Handbuch zu Bikerouter entsteht hier:",
         "privacy": "Datenschutzerklärung",
-        "routing-data": "Die Routingdaten werden aus <a href=\"https://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a> vier- bis fünf Mal täglich neu erstellt. Der Aktualisierungsstand der OpenStreetMap-Daten kann an den <a href=\"https://brouter.m11n.de/segments/\" target=\"_blank\">Datendateien</a> abgelesen werden (Zeitstempel in UTC).",
+        "routing-data": "Die Routingdaten werden aus <a href=\"https://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a> mehrfach täglich neu erstellt. Der Aktualisierungsstand der OpenStreetMap-Daten kann an den <a href=\"https://brouter.m11n.de/segments/\" target=\"_blank\">Datendateien</a> abgelesen werden (Zeitstempel in UTC).",
         "support": "<strong>Du hast Fragen,</strong> die durch die Tipps noch nicht beantwortet wurden? Im <a href=\"https://www.mtb-news.de/forum/f/gps-geraete-gps-software-karten-und-routenplanung.173/\" rel=\"nofollow\" target=\"_blank\">bikerouter.de Support-Forum</a> bei MTB-News.de wird dir mit Sicherheit weitergeholfen! <small><mark>Bitte habe Verständnis, dass ich Support-Anfragen per E-Mail nicht mehr beantworten kann – der Zeitaufwand ist leider zu groß geworden.</mark></small>",
         "title": "Über Bikerouter",
         "title-routing-data": "Routing-Daten:",
@@ -36,13 +38,63 @@
         "pois": "Orte (POIs): <a href=\"https://overpass-api.de/\" class=\"overpass-url\" target=\"_blank\">Overpass API</a>",
         "title": "Credits"
     },
+    "elevation-chart": {
+        "simplification-hint": "Das Profil wird in vereinfachter Form dargestellt. Bitte hineinzoomen um die volle Auflösung zu erhalten.",
+        "aria-label": "Höhenprofil",
+        "tooltip": {
+            "labels": {
+                "distance": "Distanz",
+                "elevation": "Höhe",
+                "grade": "Steigung",
+                "ascend": "Höhenmeter",
+                "cost": "Routingkosten",
+                "descend": "Höhenmeter bergab",
+                "elevation-difference": "Höhendifferenz",
+                "min-elevation": "Tiefster Punkt",
+                "max-elevation": "Höchster Punkt",
+                "avg-gradient": "Ø Gradient",
+                "avg-gradient-up": "Ø Steigung",
+                "avg-gradient-down": "Ø Gefälle",
+                "max-gradient-up": "Max. Steigung",
+                "max-gradient-down": "Max. Gefälle",
+                "climb-distance": "Bergauf",
+                "descent-distance": "Bergab",
+                "flat-distance": "Flach",
+                "paved-share": "befestigt",
+                "climb-category": "Anstiegskategorie"
+            }
+        },
+        "selection": {
+            "title": "Ausgewählter Abschnitt",
+            "hide-details": "Details ausblenden",
+            "no-elevation-data": "Keine Höhendaten",
+            "climb-category-hc": "HC",
+            "climb-category-n": "Kat. {{category}}"
+        },
+        "controls": {
+            "drag-to-resize": "Ziehen zum Ändern der Größe",
+            "toggle-selection-mode": "Auswahlmodus aktivieren: im Auswahlmodus lässt sich durch Klicken und Ziehen ein Bereich des Höhenprofils vergrößern.",
+            "reset-profile-zoom": "Vergrößerung zurücksetzen (Komplettes Höhenprofil anzeigen)",
+            "zoom-map-to-visible-segment": "Karte auf sichtbares Segment des Höhenprofils zentrieren",
+            "cycle-color-mode": "Farbschema wechseln (Steigung → Wegart → Oberflächenmaterial → Oberflächenbeschaffenheit → zulässige Höchstgeschwindigkeit → Routingkosten)",
+            "toggle-profile-simplification": "Profil-Vereinfachung an/aus",
+            "toggle-beeline-elevation": "Luftlinien-Höhenprofil an/aus",
+            "lock-x-axis": "Distanzsachse (x-Achse) sperren",
+            "updating-elevation-profile": "Aktualisiere Höhenprofil …"
+        },
+        "legend": {
+            "mode": "Modus"
+        }
+    },
     "export": {
         "button-download": "Herunterladen",
         "button-share": "Teilen",
+        "filename-preview": "Dateiname:",
         "format_geojson": "GeoJSON",
         "format_gpx": "GPX",
         "include_waypoints": "Auch Wegpunkte speichern",
-        "route-from-to": "{{from}} -> {{to}} - {{distance}} km, {{ascend}} hm",
+        "invalid-chars-warning": "Ungültige Zeichen im Dateinamen:",
+        "route-from-to": "{{from}} - {{to}} - {{distance}} km, {{ascend}} hm",
         "route-loop": "{{from}} - {{distance}} km, {{ascend}} hm",
         "title": "Route herunterladen",
         "trackname": "Name",
@@ -72,12 +124,12 @@
         "kilometer-abbrev": "km",
         "kilowatthour": "Kilowattstunden",
         "kilowatthour-abbrev": "kWh",
-        "mean-cost-factor": "durchschnittlicher Kostenfaktor",
+        "mean-cost-factor": "durchschn. Kostenfaktor",
         "meter": "Meter",
         "meter-abbrev": "m",
         "no-elevation-data": "Keine Höhendaten für diese Route verfügbar",
         "plain-ascend": "Höhenunterschied",
-        "stats-info": "Route zeichnen, um Statistiken zu sehen.",
+        "stats-info": "Route zeichnen, um Statistiken zu sehen",
         "total-energy": "Gesamtenergie",
         "travel-time": "Reisezeit"
     },
@@ -93,8 +145,8 @@
         "shortcut-export": "Route herunterladen",
         "shortcut-fit-route-in-viewport": "Route in Fenster zentrieren",
         "shortcut-help-dialog": "Hilfe-Dialog öffnen",
-        "shortcut-load-track": "Track laden",
-        "shortcut-load-track-as-route": "Track als Route laden",
+        "shortcut-load-track": "Track(s) importieren",
+        "shortcut-load-track-direct": "Track(s) direkt als Kartenebene importieren",
         "shortcut-locate": "Auf aktuelle Position zentrieren",
         "shortcut-main-menu": "Hautpmenü",
         "shortcut-move-map": "Karte verschieben",
@@ -105,6 +157,8 @@
         "shortcut-profile-select": "Routingprofil auswählen",
         "shortcut-reverse": "Route umkehren",
         "shortcut-roundtrip-planner": "Rundkurs-Planer",
+        "shortcut-route-inspector": "Route inspizieren (an/aus)",
+        "shortcut-route-manager": "Routenverwaltung öffnen",
         "shortcut-search": "Ortssuche",
         "shortcut-share": "Route teilen",
         "shortcut-sidebar-switch-tabs": "Reiter in Sidebar wechseln",
@@ -138,6 +192,16 @@
         "opacity-slider": "Regler für Deckkraft",
         "opacity-slider-title": "Deckkraft einstellen",
         "color-picker-title": "Farbe auswählen",
+        "custom-layer-italic-hint": "Benutzerdefinierte Ebenen sind in der Auswahl <i>kursiv</i> dargestellt",
+        "mapillary": {
+            "loading": "Foto wird geladen...",
+            "open-in-mapillary": "In Mapillary öffnen",
+            "load-error": "Mapillary-Bild konnte nicht geladen werden.",
+            "missing-key": "Mapillary-API-Schlüssel ist nicht konfiguriert.",
+            "panorama": "360°-Panorama",
+            "expand": "Foto vergrößern",
+            "restore": "Foto verkleinern"
+        },
         "opencampingmap": {
             "category": {
                 "nudist": "FKK",
@@ -213,9 +277,8 @@
         "delete-nogo-areas": "Alle No-go-Areas löschen",
         "delete-pois": "Alle POI löschen",
         "delete-route": "Route löschen",
+        "elevation-inspect": "Höheninspektionsmodus",
         "create-round-trip": "Rundkurs erstellen",
-        "draw-circlego-start": "Bewegungsradius durch Klick auf Wohnsitz ermitteln - ohne Gewähr",
-        "draw-circlego-stop": "Bewegungsradius ermitteln stoppen",
         "draw-poi-start": "POI einzeichnen",
         "draw-poi-stop": "Einzeichnen der POI beenden",
         "draw-route-start": "Route zeichnen",
@@ -225,6 +288,9 @@
         "geocoder-placeholder": "Suche...",
         "hikebike-hillshading": "Höhenschummerung",
         "hiking": "Wandern",
+        "riding": "Reiten",
+        "skating": "Inline Skating",
+        "wintersports": "Wintersport",
         "layer": {
             "bing": "Bing Luftbild",
             "cycle": "OpenCycleMap (Thunderf.)",
@@ -237,32 +303,59 @@
             "hillshading": "Höhenschummerung",
             "hillshading-mapterhorn": "Höhenschummerung",
             "hillshading-opaque": "Höhenschummerung (deckend)",
+            "mapillary-photos": "Mapillary Fotos",
             "osm": "OpenStreetMap",
             "osmde": "OpenStreetMap.de",
             "outdoors": "Outdoor (Thunderforest)",
             "route-quality": "Routenqualitätscodierung",
             "stamen-terrain": "Terrain (Stamen)",
             "strava-segments": "Strava Segmente",
-            "topo": "OpenTopoMap"
+            "topo": "OpenTopoMap",
+            "riding": "Reiten (Waymarked Trails)",
+            "skating": "Inline Skating (Waymarked Trails)",
+            "wintersports": "Wintersport (Waymarked Trails)"
         },
         "loading": "Lade...",
         "locate-me": "Meinen Standort anzeigen",
+        "lock-route": "Route sperren",
+        "unlock-route": "Route entsperren",
         "nogo": {
-            "cancel": "No-Go-Areas löschen",
+            "cancel": "No-Go-Areas zeichnen abbrechen",
             "click-drag": "Klicken und ziehen zum Zeichnen eines Kreises",
             "click-touch": "Kreis durch Klick auf Karte erstellen",
             "draw": "Kreisförmige No-Go-Area zeichnen",
             "edit": "Klicken zum Bearbeiten",
-            "help": "&square; = Bewegen / Größe anpassen, <span class=\"fa fa-trash-o\"></span> = Löschen,<br>Kreis anklicken um Bearbeiten zu beenden"
+            "help": "&square; = Bewegen / Größe anpassen, <span class=\"fa fa-trash-o\"></span> = Löschen,<br>Kreis anklicken um Bearbeiten zu beenden",
+            "polygon-cancel": "Polygon zeichnen abbrechen",
+            "polygon-click": "Klicken zum Setzen von Eckpunkten, Doppelklick auf ersten Punkt zum Beenden",
+            "polygon-click-touch": "Tippen zum Setzen von Eckpunkten, ersten Punkt antippen zum Beenden",
+            "polygon-draw": "Polygon No-Go-Area zeichnen"
         },
         "not-applicable-here": "hier nicht anwendbar",
         "opacity-slider": "Transparenz von Route und Markern anpassen",
         "opacity-slider-shortcut": "{{action}}\n(Taste {{key}} drücken und halten, um Route vorübergehend auszublenden)",
+        "mute-route-start": "Route ausblenden",
+        "mute-route-stop": "Route einblenden",
         "open-osm": "OSM",
+        "options": "Optionen",
         "preview": "Vorschau",
         "privacy": "Datenschutz",
         "reverse-route": "Route umkehren",
         "route-maxspeed": "Höchstgeschwindigkeit",
+        "route-inspector": "Routendetails anzeigen",
+        "route-inspector-close": "Schließen",
+        "route-inspector-cost": "Routingkosten",
+        "route-inspector-distance": "Distanz",
+        "route-inspector-node": "Routenpunkt",
+        "route-inspector-node-tags": "OSM-Tags Punkt",
+        "route-inspector-osm-enable-always": "OpenStreetMap-Daten immer abfragen",
+        "route-inspector-osm-extra-tags": "Zusätzliche OSM-Tags",
+        "route-inspector-osm-fetch": "OpenStreetMap-Daten abfragen",
+        "route-inspector-osm-loading": "OpenStreetMap-Daten werden abgefragt…",
+        "route-inspector-osm-node": "OSM-Knoten",
+        "route-inspector-osm-not-found": "Kein passendes OpenStreetMap-Element gefunden",
+        "route-inspector-osm-way": "OSM-Weg",
+        "route-inspector-way-tags": "OSM-Tags Weg",
         "route-quality-altitude": "Höhencodierung",
         "route-quality-cost": "Kostencodierung",
         "route-quality-incline": "Steigungscodierung",
@@ -273,6 +366,30 @@
         "strava-biking": "Zeige Strava Radfahrsegmente",
         "strava-running": "Zeige Strava Läufersegmente",
         "strava-shortcut": "{{action}}\n({{key}} Taste um Ebene ein-/auszublenden, Klicken um aktuellen Ausschnitt neu zu laden)",
+        "state-indicator": {
+            "draw-routing": "Modus „Route zeichnen“ ist aktiv",
+            "draw-beeline": "Modus „Route zeichnen“ ist aktiv (Luftlinie)",
+            "locked": "Die Route ist derzeit gesperrt, Änderungen sind erst nach dem Entsperren möglich",
+            "inspector": "Der Routen-Inspektor ist aktiv und die Route ist solange gesperrt.",
+            "measure": "Der Messmodus ist aktiv: Entfernungen und Peilungen auf der Karte messen.",
+            "elevation": "Der Höhen-Inspektor ist aktiv und zeigt die Höhe unter dem Mauszeiger auf dem Bildschirm an.",
+            "poi": "Derzeit im Modus „POI hinzufügen“: POIs durch Klick auf die Karte platzieren.",
+            "opacity-warning": "Route unsichtbar (Deckkraft auf 0)",
+            "nogo-circle": "Derzeit im Modus „No-Go-Area zeichnen (Kreis)“",
+            "nogo-polygon": "Derzeit im Modus „No-Go-Area zeichnen (Polygon)“"
+        },
+        "state-indicator-bar": {
+            "draw-routing": "Route zeichnen",
+            "draw-beeline": "Route zeichnen (Luftlinie)",
+            "locked": "Route gesperrt",
+            "inspector": "Routen-Inspektor",
+            "measure": "Messen",
+            "elevation": "Höhen-Inspektor",
+            "poi": "POI hinzufügen",
+            "nogo-circle": "No-Go-Area: Kreis",
+            "nogo-polygon": "No-Go-Area: Polygon",
+            "opacity-warning": "Route unsichtbar"
+        },
         "toggle-beeline": "Gerade Linie ein-/ausschalten",
         "zoomInTitle": "Hineinzoomen",
         "zoomOutTitle": "Herauszoomen"
@@ -305,8 +422,8 @@
         "load": {
             "nogos": "No-go-Areas laden",
             "title": "Laden",
-            "tooltip": "{{tracksAction}} ({{tracksKey}} Taste)\n{{trackAsRouteAction}} ({{trackAsRouteKey}})\n{{nogosAction}} ({{nogosKey}})",
-            "tracks": "Track laden"
+            "tooltip": "{{tracksAction}} ({{tracksKey}} Taste)\n{{nogosAction}} ({{nogosKey}})",
+            "tracks": "Tracks oder Route laden"
         },
         "profile": {
             "Fastbike-lowtraffic-tertiaries": "Rennrad (sehr wenig Verkehr) ⭐️⭐️⭐️",
@@ -317,6 +434,7 @@
             "m11n-gravel": "Gravel „m11n“ (mehr offroad) ⭐️⭐️⭐️",
             "quaelnix-gravel": "Gravel „quaelnix“ (wenig Verkehr)",
             "cxb-gravel": "Gravel „CXB“ (mehr offroad) ⭐️⭐️",
+            "gravel": "Gravel (BRouter)",
             "Trekking-tracks": "Gravel (schnell) ⭐️⭐️",
             "mtb-zossebart": "MTB „Zossebart“ ⭐️⭐️",
             "mtb-zossebart-hard": "MTB „Zossebart“ (hart) ⭐️⭐️",
@@ -326,17 +444,19 @@
             "car-eco": "Auto (effizient)",
             "car-fast": "Auto (schnell)",
             "car-vario": "Auto (vario)",
+            "car-vario-nocost": "Auto (vario, no cost)",
             "car-test": "Auto (Test)",
             "dummy": "Dummy (leer)",
             "custom": "Benutzerdefiniert",
             "fastbike-asia-pacific": "Rennrad (Asien Pazifik)",
-            "hiking-beta": "Wandern (beta)",
-            "hiking-mountain": "Wandern",
+            "hiking-beta": "Wandern",
+            "hiking-mountain": "Wandern (Berge)",
             "moped": "Moped",
             "rail": "Eisenbahn",
             "randonneur": "Randonneur",
             "river": "Fluss",
             "safety": "Sicherste Route",
+            "skating": "Inline Skating",
             "shortest": "Kürzeste Route",
             "ffmbb-long-distance-cycling": "FFMbyBicycle Long Distance",
             "trekking-ignore-cr": "Trekkingrad (ignoriere Radrouten)",
@@ -374,11 +494,15 @@
             "Trekking-wet": "Trekking-wet"
         },
         "profile-tooltip": "\n({{key}} Taste zum Umschalten)",
+        "routes": "Routen",
         "share": "Teilen",
         "share-tooltip": "Route teilen",
         "support": "Support ❤️",
         "supporters": "Hall of Fame",
         "tips": "Tipps und Tricks"
+    },
+    "poi": {
+        "hint-move": "Icon verschieben, um Position zu ändern"
     },
     "roundtrip": {
         "title": "Rundkurs-Planer",
@@ -406,6 +530,36 @@
         "import": "Suchfavoriten importieren",
         "openfavorites": "Suchfavoriten zeigen",
         "removeall": "Alle Suchfavoriten löschen"
+    },
+    "settings": {
+        "dialog": {
+            "title": "Einstellungen",
+            "subtitle": {
+                "data-management": "Einstellungen sichern",
+                "language": "Sprache wählen"
+            },
+            "label": {
+                "debug-mode": "Debug-Modus",
+                "route-color": "Farbe der Routenlinie",
+                "route-casing-color": "Randfarbe der Routenlinie",
+                "route-inspector-osm-lookup": "OpenStreetMap-Daten im Routeninspektor abfragen"
+            },
+            "button": {
+                "export": "Herunterladen",
+                "import": "Importieren",
+                "store-cloud": "In der Cloud speichern",
+                "load-cloud": "Aus der Cloud laden"
+            },
+            "alert": {
+                "store-success": "Einstellungen erfolgreich in der Cloud gespeichert!",
+                "store-error": "Fehler beim Speichern der Einstellungen: {{message}}",
+                "load-success": "Einstellungen erfolgreich aus der Cloud geladen. Die Seite wird jetzt neu geladen.",
+                "load-error": "Fehler beim Laden der Einstellungen: {{message}}",
+                "no-cloud-settings": "Noch keine Einstellungen in der Cloud vorhanden. Bitte speichere zuerst deine Einstellungen.",
+                "overwrite-confirm": "Dadurch werden deine aktuellen Einstellungen überschrieben. Bist du sicher?",
+                "invalid-file": "Ungültige Einstellungsdatei."
+            }
+        }
     },
     "share": {
         "about-shortlinks": "über Shortlinks",
@@ -510,7 +664,9 @@
             "tooltip": "Route analysieren"
         },
         "button": {
-            "about": "Über/Info"
+            "about": "Über",
+            "whats-new": "Updates",
+            "settings": "Einstellungen"
         },
         "card": {
             "alternative": {
@@ -542,6 +698,10 @@
                     "share": {
                         "title": "Route teilen als Kurzlink, QR Code, WhatsApp usw.",
                         "label": "Teilen"
+                    },
+                    "manager": {
+                        "title": "Routen speichern und laden",
+                        "label": "Meine gespeicherten Routen"
                     }
                 },
                 "help1": "Lade deine Route für die Navigation herunter, zum Beispiel als GPX-Datei (Shortcut <kbd>X</kbd>).",
@@ -555,16 +715,11 @@
                         "label": "No-Go-Regionen laden"
                     },
                     "track-load": {
-                        "title": "GPX Track, KML-Datei oder GeoJSON laden und auf der Karte anzeigen (Shortcut: O)",
-                        "label": "Track laden"
-                    },
-                    "track-load-as-route": {
-                        "title": "GPX-Track laden und automatisch Route erstellen (Shift-O)",
-                        "label": "Track als Route laden"
+                        "title": "GPX-Track, KML-Datei oder GeoJSON-Datei als Kartenebene importieren oder daraus eine Route erstellen (O)",
+                        "label": "Tracks importieren"
                     }
                 },
-                "help1": "Lade einen GPX-Track (oder auch GeoJSON, KML usw.) und zeige ihn auf der Karte an (Shortcut<kbd>O</kbd>).",
-                "help2": "Du kannst auch einen GPX-Track in eine Route konvertieren und direkt weiterplanen. (Shortcut<kbd>Shift</kbd>&nbsp;<kbd>O</kbd>).",
+                "help1": "Importiere einen oder mehrere GPX-Tracks (oder auch GeoJSON, KML usw.) (Shortcut <kbd>O</kbd>). Importiere mehrere Tracks als Kartenebenen, oder importiere einen einzelnen Track als Kartenebene oder wandle ihn direkt in eine Route um, um die Planung fortzusetzen.",
                 "help3": "Hast du No-Go-Areas als GeoJSON-Datei, kannst du diese auch einfach importieren (Shortcut<kbd>Shift</kbd>&nbsp;<kbd>N</kbd>).",
                 "title": "Daten importieren"
             },
@@ -598,24 +753,6 @@
                     "button-elevation-profile": "Höhenprofil"
                 }
             },
-            "settings": {
-                "button": {
-                    "export": "Exportieren",
-                    "import": "Importieren"
-                },
-                "help1": "Durch das Aktivieren von „Messungen auf der Karte“ wird am linken Bildschirmrand eine Schaltfläche hinzugefügt, mit der sich Entfernungen und Peilwinkel auf der Karte messen lassen.",
-                "help2": "Die Farbe und die Randfarbe der Routenlinie können eingestellt werden. Durch einen Klick auf das farbige Quadrat öffnet sich der Farbwähler.",
-                "help3": "Die aktuellen Einstellungen (Ebenen, Farben, angepasste Routenprofile usw.) können heruntergeladen werden. Die Datei kann später wieder hochgeladen werden, um die Einstellungen wieder herzustellen. Auch lassen sich so Einstellungen auf einen anderen Rechner übertragen.",
-                "title": "Einstellungen",
-                "subtitle": {
-                    "data-management": "Einstellungen sichern"
-                },
-                "label": {
-                    "enable-measurements": "Messungen auf der Karte aktivieren",
-                    "route-color": "Farbe der Routenlinie",
-                    "route-casing-color": "Randfarbe der Routenlinie"
-                }
-            },
             "support": {
                 "button": {
                     "hall-of-fame": {
@@ -646,10 +783,6 @@
             "title": "Daten",
             "tooltip": "Detaillierte Datentabelle der Route anzeigen"
         },
-        "itinerary": {
-            "title": "Reiseroute",
-            "tooltip": "Reiseplan anzeigen"
-        },
         "layers": {
             "category": {
                 "base-layers": "Grundkarten",
@@ -660,16 +793,32 @@
                 "overpass": "Orte (POIs)",
                 "worldwide": "Weltweit",
                 "worldwide-international": "Weltweit international",
-                "worldwide-monolingual": "Weltweit einsprachig"
+                "worldwide-monolingual": "Weltweit einsprachig",
+                "configured-layers": "Konfigurierte Ebenen"
             },
             "collapse": "Alle zusammenklappen",
             "custom-layers": "Benutzerdefinierte Ebenen",
             "customize": "Benutzerdefinierte Ebenen hinzufügen oder entfernen",
             "expand": "Alle ausklappen",
-            "optional": "Optionale Ebenen hinzufügen oder entfernen",
-            "optional-layers": "Mehr",
+            "filter-enabled": "Nur aktivierte Ebenen anzeigen",
+            "search-label": "Ebenen nach Name suchen",
+            "search-placeholder": "camping",
+            "optional": "Um die Kartenansicht anzupassen, lassen sich nach Bedarf Ebenen hinzufügen oder entfernen. Der Ebenenbaum kann aufgeklappt werden; außerdem gibt es ein Namenssuche. Um Ebenen als Basisebenen oder Überlagerungen (oben zu sehen) einzufügen, einfach die entsprechenden Kontrollkästchen aktivieren. Sobald die Ebenen hinzugefügt wurden, können sie jederzeit auf der Karte aktiviert werden.",
+            "optional-layers": "Mehr Ebenen",
             "overlay-opacity": "Transparenz der Überlagerung",
             "overlay-opacity_plural": "Transparenz der Überlagerung",
+            "new-group": "Neue Gruppe",
+            "group-name-default": "Ebenen-Gruppe",
+            "rename": "Umbenennen",
+            "remove": "Ebene löschen",
+            "move-up": "Nach oben",
+            "move-down": "Nach unten",
+            "move-out-of-group": "Aus Gruppe entfernen",
+            "drag-handle-title": "Ziehen zum Sortieren",
+            "cannot-remove-last-base-layer": "Mindestens eine Basisebene ist erforderlich.",
+            "delete-group-confirm": "Gruppe auflösen und Ebenen behalten?",
+            "reset-layers": "Ebenen zurücksetzen",
+            "reset-layers-confirm": "Alle Ebenen, Gruppen und Namen auf Standard zurücksetzen?",
             "single-opacity": "Deckkraft-Regler für einzelne Ebenen",
             "table": {
                 "URL": "URL/Abfrage",
@@ -696,6 +845,7 @@
         "waypoints": {
             "btn-reset": "Routing zurücksetzen",
             "btn-routing-options": "Routing-Einstellungen",
+            "copy-geo-uri": "Geo-URI kopieren",
             "link-openstreetmap": "OpenStreetMap",
             "split-from-here": "Neue Route ab hier",
             "split-to-here": "Neue Route bis hier",
@@ -707,16 +857,31 @@
             "beeline": "Luftlinie"
         }
     },
-    "trackasroute": {
+    "trackimport": {
         "browse": "Durchsuchen",
-        "explainpoi": "(Wegpunkte als POIs anzeigen)",
-        "explaintracklayer": "(Tour als separate Ebene anzeigen)",
-        "file": "Track-Datei",
+        "create-route": "Route erstellen",
+        "drop-overlay-subtitle": "Importierte Tracks werden als zusätzliche Kartenebenen angezeigt.",
+        "drop-overlay-title": "Track-Datei(en) hier ablegen",
+        "explainpoi": "Wegpunkte als POIs hinzufügen",
+        "explainpoi-multi": "(gilt für alle importierten Dateien)",
+        "explaintracklayer": "Tour als separate Ebene anzeigen",
+        "file": "Datei(en)",
         "file-description": "Unterstützte Formate: GPX, KML, GeoJSON",
+        "file-list-title": "Ausgewählte Tracks",
+        "file-too-large": "Datei zu groß: {{filename}}",
+        "import-as-layer": "Als Ebene(n) importieren",
+        "import-options": "Import-Optionen",
+        "import-pois": "Daten importieren",
+        "layer-color": "Ebenenfarbe",
+        "no-track-notice": "Diese Datei enthält keinen Track. Enthaltene Wegpunkte werden als POIs importiert, sonstiger Inhalt als Ebene.",
         "number-of-via-points": "Anzahl Wegpunkte",
         "processing-message": "Einen Moment bitte … 🧑‍🏭",
-        "showpois": "POIs",
-        "title": "Track als Route laden",
+        "route-adjustments": "Routenanpassungen",
+        "route-adjustments-description": "Aus dem ausgewählten Track kann eine Route angenähert werden: Wähle die Anzahl der Wegpunkte und klicke unten auf „Route erstellen“. Die Route wird mit dem aktuell ausgewählten Routing-Profil berechnet ({{profile}}).",
+        "route-link-found": "Diese Datei wurde von bikerouter.de erstellt und enthält eine wiederherstellbare Route.",
+        "route-link-load": "Gespeicherte Route laden",
+        "showpois": "POIs importieren",
+        "title": "Tracks oder Route importieren",
         "tracklayer": "Tour-Ebene"
     },
     "warning": {
@@ -725,13 +890,20 @@
         "invalid-route-to": "Die Zielmarkierung ist zu weit von der Route entfernt.",
         "no-response": "Keine Antwort vom Server",
         "no-route-found": "Fehler: kann für angegebene Punkte keine Route finden. Vielleicht die Punkte näher an Straßen verschieben?",
+        "route-point-in-nogo-area": "Ein Routenpunkt liegt innerhalb eines No-Go-Bereichs. Verschiebe den Punkt aus dem No-Go-Bereich heraus und berechne die Route erneut.",
         "profile-error": "Profil-Fehler: keine oder leere Antwort vom Server",
         "strava-error": "Fehler beim Laden der Strava Segmente: {{error}}",
         "temporary-profile": "<strong>Hinweis:</strong> Hochgeladene benutzerdefinierte Profile werden nur vorübergehend auf dem Server zwischengespeichert.<br/>Bitte Bearbeitungen auf deinem Rechner speichern oder die Funktionen zum Verwalten von angepassten Profilen direkt hier drunter nutzen.",
         "tracks-load-error": "Fehler beim Laden von tracks: {{error}}",
-        "upload-error": "Fehler beim Hochladen: {{error}}"
+        "upload-error": "Fehler beim Hochladen: {{error}}",
+        "webgl2-layer-unavailable": "Die Ebene „{{layer}}“ ist nicht verfügbar, da WebGL2 vom Browser nicht unterstützt wird.",
+        "webgl2-layer-unavailable-generic": "Die ausgewählte Ebene ist nicht verfügbar, da WebGL2 vom Browser nicht unterstützt wird."
     },
     "whatsnew": {
+        "contact": "Kontakt:",
+        "support": "Support:",
+        "forum-thread": "Bikerouter-Forum bei MTB-News.de",
+        "mastodon": "@bikerouter auf Mastodon",
         "dont-show-again": "Für diese Version nicht mehr anzeigen",
         "new-version": "✨ Seit dem letzten Besuch wurde eine neue Version veröffentlicht!",
         "show-changes": "Änderungen anzeigen",
@@ -752,5 +924,247 @@
         "enable": "Messung starten",
         "disable": "Messung beenden und von Karte löschen",
         "clear": "Messung von Karte löschen"
+    },
+    "routemanager": {
+        "close": "Schließen",
+        "close-settings": "Zurück",
+        "cancel": "Abbrechen",
+        "logout": "Abmelden",
+        "title": "Route Manager",
+        "reload": "Routen und Ordner neu laden",
+        "help": {
+            "heading": "So funktioniert die Routenverwaltung",
+            "button": "Hilfe",
+            "close": "Hilfetext schließen",
+            "line1": "Mit der Routenverwaltung kannst du deine aktuelle Route speichern und zuvor gespeicherte Routen in Bikerouter laden.",
+            "line2": "Im Gegensatz zum „alles lebt im Browser“-Ansatz werden deine Routen auf den Servern von Bikerouter gespeichert.",
+            "line3": "Um deine Routen zu speichern und darauf zuzugreifen, kannst du dir mit einem Klick ein Konto anlegen. <strong>Es sind keine E-Mail-Adresse oder andere personenbezogene Daten erforderlich</strong> – nur ein eindeutiger Zugangscode.",
+            "line4": "Bei der Registrierung erzeugt Bikerouter einen Zugangscode für dich. Behandle ihn wie ein Passwort, denn damit erhältst du Zugriff auf alle gespeicherten Routen. Dieser Code wird <strong>nur einmal nach der Registrierung angezeigt</strong> und kann bei Verlust nicht wiederhergestellt werden. Du kannst jederzeit einen neuen Zugangscode erstellen, solange du den aktuellen Zugangscode kennst.",
+            "line5": "<strong>Achtung:</strong> ‼️ Falls du deinen Zugangscode verlierst, hast du keinen Zugriff mehr auf die gespeicherten Routen. Der Code lässt sich auch nicht wiederherstellen!",
+            "line6": "Sobald du angemeldet bist, kannst du Routen speichern, laden, bearbeiten und löschen. Du kannst sie auch in Ordner sortieren."
+        },
+        "settings": {
+            "button": "Einstellungen",
+            "title": "Einstellungen",
+            "delete-account": "Konto löschen",
+            "delete-account-confirm": "Möchtest du dein Konto wirklich löschen? Drei Tage nach dem Start der Löschung werden dein Konto und alle Routen dauerhaft gelöscht.",
+            "delete-account-passphrase-prompt": "Bitte gib deinen Zugangscode ein, um die Kontolöschung zu bestätigen:",
+            "delete-account-success": "Die Kontolöschung wurde erfolgreich vorgemerkt. Du wirst jetzt abgemeldet. Um die Löschung abzubrechen, melde dich einfach innerhalb der nächsten drei Tage erneut an.",
+            "download-archive": "Routenarchiv herunterladen",
+            "change-access-code": "Zugangscode ändern",
+            "change-access-code-description": "Erzeuge einen neuen Zugangscode für dein Konto. Sobald du dich mit dem neuen Code anmeldest, funktioniert der bisherige Zugangscode nicht mehr.",
+            "current-access-code-label": "Aktueller Zugangscode",
+            "current-access-code-placeholder": "Gib deinen aktuellen Zugangscode ein",
+            "generate-new-access-code": "Neuen Zugangscode erzeugen",
+            "change-access-code-success": "Neuer Zugangscode erfolgreich erzeugt!",
+            "change-access-code-warning": "⚠️ Das ist dein neuer Zugangscode. Sobald du dich mit diesem Code anmeldest, funktioniert dein aktueller Zugangscode nicht mehr. Bewahre diesen neuen Code sicher auf.",
+            "current-access-code-required": "Bitte gib deinen aktuellen Zugangscode ein.",
+            "copy-success": "Zugangscode in die Zwischenablage kopiert!",
+            "copy-failed": "Zugangscode konnte nicht kopiert werden.",
+            "login-with-new-access-code": "Mit neuem Zugangscode anmelden",
+            "archive": {
+                "title": "Routenarchiv herunterladen",
+                "description": "Fordere ein Archiv (JSON) an, das alle deine gespeicherten Routen und Ordner enthält. Je nach Menge kann die Erstellung einen Moment dauern.",
+                "button-create": "Routenarchiv erstellen",
+                "status-processing": "Dein Routenarchiv wird erstellt. Bitte warten…",
+                "status-available": "Dein Routenarchiv ist bereit!",
+                "button-download-url": "Routenarchiv herunterladen",
+                "warning-expires": "Dieser Download-Link ist 24 Stunden gültig.",
+                "status-error": "Beim Erstellen des Routenarchivs ist ein Fehler aufgetreten."
+            },
+            "import": {
+                "title": "Routenarchiv importieren",
+                "description": "Importiere Routen und Ordner aus einer zuvor exportierten JSON-Datei. WARNUNG: Alle vorhandenen Daten werden gelöscht!",
+                "button-import": "Importieren",
+                "status-success": "Import erfolgreich gestartet!",
+                "status-success-info": "Deine Routen und Ordner erscheinen innerhalb weniger Minuten im Routen-Manager. Du musst die Seite neu laden, um die Änderungen zu sehen.",
+                "status-error": "Beim Starten des Imports ist ein Fehler aufgetreten.",
+                "parse-error": "Die ausgewählte Datei konnte nicht analysiert werden. Bitte stelle sicher, dass es sich um einen gültigen JSON-Export handelt.",
+                "read-error": "Die ausgewählte Datei konnte nicht gelesen werden."
+            },
+            "storage": {
+                "title": "Speichereinstellungen",
+                "description": "Wähle, wo Routen und Ordner gespeichert werden sollen. Browser-Speicher behält alles nur auf diesem Gerät. Bikerouter-Speicher verwendet deinen Zugangscode und ermöglicht die Nutzung deiner Routen auf mehreren Geräten.",
+                "button": "Speichereinstellungen",
+                "option-api": "Bikerouter-Speicher verwenden",
+                "option-local": "Nur diesen Browser verwenden",
+                "local-unavailable": "Browser-Speicher nicht verfügbar",
+                "using-local": "Aktuell wird in diesem Browser gespeichert",
+                "using-api": "Aktuell wird im Bikerouter-Speicher gespeichert",
+                "export-button": "Daten exportieren",
+                "import-button": "Daten importieren",
+                "clear-button": "Browser-Daten löschen",
+                "export-success": "Daten erfolgreich exportiert!",
+                "export-error": "Fehler beim Exportieren der Daten: {{message}}",
+                "import-success": "Daten erfolgreich importiert!",
+                "import-error": "Fehler beim Importieren der Daten: {{message}}",
+                "import-read-error": "Fehler beim Lesen der Datei.",
+                "import-confirm": "Dies wird alle browsergespeicherten Routen und Ordner ersetzen. Fortfahren?",
+                "clear-success": "Browser-Daten erfolgreich gelöscht!",
+                "clear-error": "Fehler beim Löschen der Daten: {{message}}",
+                "clear-confirm": "Möchtest du wirklich alle browsergespeicherten Routendaten löschen? Dies kann nicht rückgängig gemacht werden.",
+                "remote-info": "Um den Bikerouter-Speicher zu verwenden, melde dich mit deinem Zugangscode an.",
+                "login-button": "Anmelden beim Bikerouter-Speicher",
+                "switch-confirm": "Das Wechseln zum Bikerouter-Speicher erfordert eine Anmeldung. Deine browsergespeicherten Daten bleiben auf diesem Gerät. Fortfahren?",
+                "switch-to-remote-title": "Wechsel zum Bikerouter-Speicher",
+                "switch-to-remote-info": "Du wechselst vom Browser-Speicher auf diesem Gerät zum Bikerouter-Speicher.",
+                "switch-to-remote-bullet1": "Deine vorhandenen browsergespeicherten Routen und Ordner bleiben auf diesem Gerät",
+                "switch-to-remote-bullet2": "Du musst dich anmelden, um auf den Bikerouter-Speicher zuzugreifen",
+                "switch-to-remote-bullet3": "Du kannst jederzeit zum Browser-Speicher zurückwechseln",
+                "login-now": "Bikerouter-Speicher verwenden",
+                "stay-local": "Beim Browser-Speicher bleiben",
+                "switch-to-local-title": "Wechsel zum Browser-Speicher",
+                "switch-to-local-info": "Du wechselst vom Bikerouter-Speicher zum Speicher in diesem Browser.",
+                "switch-to-local-warning": "⚠️ Deine Bikerouter-Routen bleiben auf dem Server. Du hast nach erneuter Anmeldung Zugriff darauf.",
+                "continue-local": "Diesen Browser verwenden",
+                "stay-remote": "Beim Bikerouter-Speicher bleiben"
+            },
+            "danger-zone": {
+                "title": "Gefahrenbereich",
+                "warning": "Alle Routen und Ordner werden drei Tage nach dem Start der Kontolöschung dauerhaft gelöscht. Um die Löschung deines Kontos und deiner Routen abzubrechen, melde dich einfach innerhalb dieses Drei-Tage-Zeitraums erneut an."
+            }
+        },
+        "storage-choice": {
+            "title": "Wähle, wo Routen gespeichert werden sollen",
+            "description": "Der Routen-Manager ermöglicht das Speichern deiner geplanten Routen. Du kannst Routen nur auf diesem Gerät behalten oder dich anmelden, um sie im Bikerouter-Speicher zu speichern.",
+            "api-title": "Bikerouter-Speicher",
+            "api-detail1": "Melde dich mit deinem Zugangscode an oder registriere ein neues Konto",
+            "api-detail2": "Es sind keine persönlichen Daten wie eine E-Mail-Adresse erforderlich",
+            "api-detail3": "Gut, wenn du deine Routen auf mehreren Geräten verfügbar haben möchtest",
+            "api-detail4": "Nutze Funktionen, die nur mit einem Konto verfügbar sind, wie Vorschaubilder für Routen",
+            "local-title": "Nur dieser Browser",
+            "local-detail1": "Keine Anmeldung erforderlich",
+            "local-detail2": "Routen bleiben auf diesem Gerät und in diesem Browser",
+            "local-detail3": "Exportiere/importiere jederzeit für Backup oder manuellen Transfer",
+            "local-detail4": "Keine Routenvorschau-Bilder",
+            "local-button": "Nur diesen Browser verwenden"
+        },
+        "save": {
+            "button": "Route speichern",
+            "button-save-form": "Route hier speichern",
+            "create-folder": "Neuen Ordner erstellen",
+            "folder-label": "Ordner (optional)",
+            "root-folder": "Kein Ordner",
+            "route-name-label": "Routenname (optional)",
+            "route-name-placeholder": "Paris - Lüttich",
+            "save-as-new": "Als neue Route speichern",
+            "overwrite-existing": "Bestehende Route überschreiben",
+            "select-route": "Zu überschreibende Route auswählen",
+            "unnamed-route": "Unbenannte Route",
+            "overwrite-button": "Route überschreiben",
+            "confirm-overwrite": "Möchtest du die Route „{{name}}“ wirklich überschreiben? Das kann nicht rückgängig gemacht werden."
+        },
+        "prompt": {
+            "new-folder-name": "Neuen Ordnernamen eingeben:",
+            "confirm-delete-folder": "Möchtest du den Ordner \"{{name}}\" wirklich löschen? Die darin enthaltenen Routen werden in das Hauptverzeichnis verschoben.",
+            "confirm-load-route": "Route in den Planer laden?\n ⚠️ Deine aktuell geplante Route und Einstellungen werden überschrieben.",
+            "confirm-delete-route": "Möchtest du \"{{name}}\" wirklich löschen?"
+        },
+        "error": {
+            "create-folder": "Ordner konnte nicht erstellt werden: {{message}}",
+            "save-route": "Fehler beim Speichern der Route: {{message}}",
+            "rename-folder": "Ordner konnte nicht umbenannt werden: {{message}}",
+            "delete-folder": "Ordner konnte nicht gelöscht werden: {{message}}",
+            "move-route": "Route konnte nicht verschoben werden: {{message}}",
+            "update-route": "Route konnte nicht aktualisiert werden: {{message}}",
+            "delete-route": "Route konnte nicht gelöscht werden: {{message}}",
+            "load-route": "Route konnte nicht geladen werden: {{message}}",
+            "custom-profile-incompatible": "⚠️ Das mit dieser Route verknüpfte benutzerdefinierte Routing-Profil wird nicht mehr unterstützt ({{message}}). Die Route wird stattdessen mit dem Standardprofil berechnet.",
+            "unauthorized": "Authentifizierung fehlgeschlagen. Bitte überprüfe deinen Zugangscode.",
+            "not-found": "Ressource nicht gefunden.",
+            "validation": "Ungültige Daten übermittelt.",
+            "rate-limit": "Zu viele Anfragen. Bitte versuche es später erneut.",
+            "server": "Serverfehler. Bitte versuche es später erneut.",
+            "network": "Netzwerkfehler. Bitte überprüfe deine Internetverbindung.",
+            "generic": "Es ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+            "invalid-passphrase": "Ungültiger Zugangscode. Bitte versuche es erneut.",
+            "key-not-found": "Authentifizierungsschlüssel nicht gefunden.",
+            "folder-not-found": "Ordner nicht gefunden.",
+            "route-not-found": "Route nicht gefunden."
+        },
+        "list": {
+            "loading": "Routen werden geladen…",
+            "retry": "Erneut versuchen",
+            "empty-hint": "Sobald eine Route geplant wurde, kann sie hier gespeichert werden.",
+            "add-folder": "Ordner hinzufügen",
+            "rename-folder": "Ordner umbenennen",
+            "delete-folder": "Ordner löschen",
+            "rename-current-folder": "Aktuellen Ordner umbenennen",
+            "delete-current-folder": "Aktuellen Ordner löschen",
+            "search-placeholder": "Routen durchsuchen...",
+            "clear-search": "Suche löschen",
+            "sort-alphabetical": "A–Z",
+            "sort-date": "Datum",
+            "sort-asc": "Aufsteigend",
+            "sort-desc": "Absteigend",
+            "up": "Nach oben",
+            "home": "Start",
+            "routes_count_one": "1 Route",
+            "routes_count": "{{count}} Routen",
+            "subfolders_count_one": "1 Unterordner",
+            "subfolders_count": "{{count}} Unterordner",
+            "view-grid": "Kachelansicht",
+            "view-list-expanded": "Erweiterte Liste",
+            "view-list-compact": "Kompakte Liste",
+            "folders": "Ordner",
+            "all-routes": "Start",
+            "no-folders": "Noch keine Ordner",
+            "actions-menu": "Aktionen",
+            "filter-active": "Filter aktiv",
+            "columns": {
+                "route": "Route",
+                "distance": "Distanz",
+                "time": "Dauer",
+                "elevation": "hm",
+                "activity": "Profil",
+                "date-saved": "Datum",
+                "actions": "Aktionen"
+            },
+            "route": {
+                "name": "Name",
+                "name-placeholder": "Paris - Lüttich",
+                "unnamed": "Unbenannte Route",
+                "description": "Beschreibung",
+                "description-placeholder": "Optionale Beschreibung",
+                "folder": "Ordner",
+                "root": "Kein Ordner",
+                "save": "Speichern",
+                "cancel": "Abbrechen",
+                "edit": "Route bearbeiten",
+                "delete": "Route löschen",
+                "overwrite-with-current": "Mit aktueller Route überschreiben",
+                "confirm-overwrite": "Möchtest du die Route „{{name}}“ wirklich mit der aktuellen Routenplanung überschreiben? Das kann nicht rückgängig gemacht werden.",
+                "distance": "Distanz",
+                "duration": "Dauer",
+                "ascend": "Anstieg",
+                "profile": "Profil",
+                "unknown": "Unbekannt",
+                "preview": "Routenvorschau",
+                "elevation": "Höhenprofil",
+                "drag-handle": "Ziehen zum Verschieben in anderen Ordner"
+            }
+        },
+        "login": {
+            "title": "Anmelden",
+            "passphrase-placeholder": "Zugangscode",
+            "button-login": "Anmelden",
+            "button-logging-in": "Anmeldung läuft…",
+            "no-account": "Noch kein Konto?",
+            "register-link": "Registrieren",
+            "already-have-account": "Hast du bereits ein Konto?",
+            "login-in-new-account": "Neuen Zugangscode verwenden:",
+            "login-link": "Anmelden"
+        },
+        "register": {
+            "title": "Registrieren",
+            "explanation": "Bei der Registrierung wird ein Zugangscode für dich erzeugt.",
+            "button-register": "Registrieren",
+            "button-generating": "Wird erzeugt…",
+            "new-passphrase": "Neuer Zugangscode:",
+            "button-copy": "Kopieren",
+            "button-copied": "Kopiert!",
+            "warning-title": "BITTE SORGFÄLTIG LESEN:",
+            "warning-text": "Bitte sichere diesen Zugangscode. Nur damit kannst du auf deine gespeicherten Routen zugreifen. Wenn du ihn verlierst, sind deine gespeicherten Routen nicht mehr erreichbar."
+        }
     }
 }

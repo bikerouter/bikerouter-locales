@@ -1,15 +1,17 @@
 {
     "about": {
-        "hosted": "Bikerouter is hosted by <a href='https://marcusjaschen.com/' target='_blank'>Marcus Jaschen</a>. Contact: <a href='https://en.osm.town/@bikerouter' target='_blank' rel='me'>@bikerouter@en.osm.town</a>",
+        "hosted": "Bikerouter is hosted and developed by <a href='https://marcusjaschen.com/' target='_blank'>Marcus Jaschen</a>. Contact: <a href='https://en.osm.town/@bikerouter' target='_blank' rel='me'>@bikerouter@en.osm.town</a>",
         "imprint": "Imprint",
         "introduction": "Bikerouter is the perfect way to plan bike routes online and is based on BRouter-Web. <b>BRouter-Web is a project by Norbert Renner,</b> the routing engine <b>BRouter was developed by Arndt Brenschede.</b>",
-        "language-switch-reload": "(Seite lädt neu)",
+        "language-switch-label": "bikerouter.de in",
+        "language-switch-more": "More languages…",
+        "language-switch-reload": "(page will reload)",
         "license": "Licenses and further information",
         "link-manual-de": "Handbuch 🇩🇪",
-        "link-manual-en": "Manual 🇬🇧",
+        "link-manual-en": "Manual 🇪🇺",
         "manual": "The manual for Bikerouter is work in progress and is being created here:",
         "privacy": "Privacy",
-        "routing-data": "The routing data is generated directly from <a href=\"https://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a> about four to five times every day. The data age can be seen on the timestamp of the <a href=\"https://brouter.m11n.de/segments/\" target=\"_blank\">data files</a>. (Timestamp in UTC).",
+        "routing-data": "The routing data is generated directly from <a href=\"https://www.openstreetmap.org\" target=\"_blank\">OpenStreetMap</a> multiple times every day. The data age can be seen on the timestamp of the <a href=\"https://brouter.m11n.de/segments/\" target=\"_blank\">data files</a>. (Timestamp in UTC).",
         "support": "<strong>Do you have questions</strong> that are not yet answered by the manual and the articles linked on the manual homepage? In the <a href=\"https://www.mtb-news.de/forum/f/gps-geraete-gps-software-karten-und-routenplanung.173/\" rel=\"nofollow\" target=\"_blank\">bikerouter.de support forum</a> at MTB-News.de you will definitely get help (alas, in German only). <small><mark>Please understand that I can no longer answer support requests by email – the time required has unfortunately become too much.</mark></small>",
         "title": "About Bikerouter",
         "title-routing-data": "Routing Data",
@@ -36,12 +38,62 @@
         "pois": "Locations (POIs): <a href=\"https://overpass-api.de/\" class=\"overpass-url\" target=\"_blank\">Overpass API</a>",
         "title": "Credits"
     },
+    "elevation-chart": {
+        "simplification-hint": "Profile simplification is active; zoom in the elevation chart to see more details",
+        "aria-label": "Elevation Profile",
+        "tooltip": {
+            "labels": {
+                "distance": "Distance",
+                "elevation": "Elevation",
+                "grade": "Grade",
+                "ascend": "Elevation gain",
+                "cost": "Routing Costs",
+                "descend": "Elevation loss",
+                "elevation-difference": "Elevation diff.",
+                "min-elevation": "Lowest point",
+                "max-elevation": "Highest point",
+                "avg-gradient": "Avg. gradient",
+                "avg-gradient-up": "Avg. gradient up",
+                "avg-gradient-down": "Avg. gradient down",
+                "max-gradient-up": "Max. gradient up",
+                "max-gradient-down": "Max. gradient down",
+                "climb-distance": "Climbing",
+                "descent-distance": "Descending",
+                "flat-distance": "Flat",
+                "paved-share": "paved",
+                "climb-category": "Climb category"
+            }
+        },
+        "selection": {
+            "title": "Selected segment",
+            "hide-details": "Hide details",
+            "no-elevation-data": "No elevation data",
+            "climb-category-hc": "HC",
+            "climb-category-n": "Cat. {{category}}"
+        },
+        "controls": {
+            "drag-to-resize": "Drag to Resize",
+            "toggle-selection-mode": "Toggle selection mode: In selection mode, zoom in by clicking and dragging over a segment in the chart.",
+            "reset-profile-zoom": "Reset Profile Zoom",
+            "zoom-map-to-visible-segment": "Zoom map to visible profile segment",
+            "cycle-color-mode": "Cycle Color Mode (Grade → Highway Type → Surface Material → Surface Smoothness → Maximum Allowed Speed → Routing Costs)",
+            "toggle-profile-simplification": "Toggle Profile Simplification",
+            "toggle-beeline-elevation": "Toggle Beeline Elevation Profile",
+            "lock-x-axis": "Lock distance-axis (x-axis)",
+            "updating-elevation-profile": "Updating Elevation Profile …"
+        },
+        "legend": {
+            "mode": "Mode"
+        }
+    },
     "export": {
         "button-download": "Start Download",
         "button-share": "Share",
+        "filename-preview": "Filename:",
         "format_geojson": "GeoJSON",
         "format_gpx": "GPX",
         "include_waypoints": "Also include waypoints",
+        "invalid-chars-warning": "Invalid filename characters:",
         "route-from-to": "{{from}} - {{to}} - {{distance}} km, elev. gain {{ascend}} m",
         "route-loop": "{{from}} - {{distance}} km, elev. gain {{ascend}} m",
         "title": "Download Route",
@@ -93,8 +145,8 @@
         "shortcut-export": "Download route",
         "shortcut-fit-route-in-viewport": "Zoom and Center Route in Viewport",
         "shortcut-help-dialog": "Open this help dialog",
-        "shortcut-load-track": "Load track",
-        "shortcut-load-track-as-route": "Load track as route",
+        "shortcut-load-track": "Import track(s)",
+        "shortcut-load-track-direct": "Import track(s) directly as overlay",
         "shortcut-locate": "Center current position (geolocation)",
         "shortcut-main-menu": "Open Main Menu",
         "shortcut-move-map": "Move map",
@@ -105,6 +157,8 @@
         "shortcut-profile-select": "Select routing profile",
         "shortcut-reverse": "Reverse route",
         "shortcut-roundtrip-planner": "Open Round Trip Planner",
+        "shortcut-route-inspector": "Toggle Route Inspector",
+        "shortcut-route-manager": "Open Route Manager",
         "shortcut-search": "Search for locations",
         "shortcut-share": "Share route",
         "shortcut-sidebar-switch-tabs": "Cycle through tabs in sidebar",
@@ -138,6 +192,16 @@
         "opacity-slider": "Opacity slider",
         "opacity-slider-title": "Adjust Overlay Opacity",
         "color-picker-title": "Choose Overlay Color",
+        "custom-layer-italic-hint": "Custom layers are shown in <i>italics</i> in the layer selection.",
+        "mapillary": {
+            "loading": "Loading photo...",
+            "open-in-mapillary": "Open in Mapillary",
+            "load-error": "Failed to load Mapillary image.",
+            "missing-key": "Mapillary API key is not configured.",
+            "panorama": "360° Panorama",
+            "expand": "Expand photo",
+            "restore": "Restore photo"
+        },
         "opencampingmap": {
             "category": {
                 "nudist": "Nudist",
@@ -213,9 +277,10 @@
         "delete-nogo-areas": "Delete all no-go areas",
         "delete-pois": "Delete all points of interest",
         "delete-route": "Delete route",
+        "discovery-preview-stop": "Disable Tileflood Discovery",
+        "discovery-preview-start": "Tileflood Discovery Preview",
+        "elevation-inspect": "Elevation Inspector",
         "create-round-trip": "Create a Round Trip",
-        "draw-circlego-start": "Draw limited go-to zone",
-        "draw-circlego-stop": "Stop drawing limited go-to zone",
         "draw-poi-start": "Draw points of interest",
         "draw-poi-stop": "Stop drawing points of interest",
         "draw-route-start": "Draw route",
@@ -225,6 +290,9 @@
         "geocoder-placeholder": "Search…",
         "hikebike-hillshading": "Hillshading",
         "hiking": "Hiking",
+        "riding": "Riding",
+        "skating": "Inline Skating",
+        "wintersports": "Winter Sports",
         "layer": {
             "bing": "Bing Aerial",
             "cycle": "OpenCycleMap (Thunderf.)",
@@ -237,32 +305,59 @@
             "hillshading": "Hillshading",
             "hillshading-mapterhorn": "Hillshading",
             "hillshading-opaque": "Hillshading (opaque)",
+            "mapillary-photos": "Mapillary Photos",
             "osm": "OpenStreetMap",
             "osmde": "OpenStreetMap.de",
             "outdoors": "Outdoors (Thunderforest)",
             "route-quality": "Route quality coding",
             "stamen-terrain": "Terrain (Stamen)",
             "strava-segments": "Strava segments",
-            "topo": "OpenTopoMap"
+            "topo": "OpenTopoMap",
+            "riding": "Riding (Waymarked Trails)",
+            "skating": "Inline Skating (Waymarked Trails)",
+            "wintersports": "Winter Sports (Waymarked Trails)"
         },
         "loading": "Loading…",
         "locate-me": "Show me where I am",
+        "lock-route": "Lock route: disallow editing on map",
+        "unlock-route": "Unlock route: allow editing on map",
         "nogo": {
             "cancel": "Cancel drawing no-go area",
             "click-drag": "Click and drag to draw circle",
             "click-touch": "Click map to add no-go area (circle)",
             "draw": "Draw circular no-go area",
             "edit": "Click to edit",
-            "help": "&square; = move / resize, <span class=\"fa fa-trash-o\"></span> = delete,<br>click into no-go area to quit editing"
+            "help": "&square; = move / resize, <span class=\"fa fa-trash-o\"></span> = delete,<br>click into no-go area to quit editing",
+            "polygon-cancel": "Cancel drawing polygon no-go area",
+            "polygon-click": "Click to add vertices, double-click on first vertex to finish",
+            "polygon-click-touch": "Tap to add vertices, tap first vertex to finish",
+            "polygon-draw": "Draw polygonal no-go area"
         },
         "not-applicable-here": "not applicable here",
         "opacity-slider": "Set transparency of route track and markers",
         "opacity-slider-shortcut": "{{action}}\n(Hold {{key}} key to mute temporarily)",
+        "mute-route-start": "Mute route line",
+        "mute-route-stop": "Unmute route line",
         "open-osm": "OSM",
+        "options": "Options",
         "preview": "Preview",
         "privacy": "Privacy",
         "reverse-route": "Reverse route",
         "route-maxspeed": "Maximum allowed speed on way",
+        "route-inspector": "Inspect route details",
+        "route-inspector-close": "Close",
+        "route-inspector-cost": "Routing costs",
+        "route-inspector-distance": "Distance",
+        "route-inspector-node": "Route node",
+        "route-inspector-node-tags": "Raw node tags",
+        "route-inspector-osm-enable-always": "Always look up OpenStreetMap data",
+        "route-inspector-osm-extra-tags": "Additional OSM tags",
+        "route-inspector-osm-fetch": "Look up OpenStreetMap data",
+        "route-inspector-osm-loading": "Looking up OpenStreetMap data…",
+        "route-inspector-osm-node": "OSM Node",
+        "route-inspector-osm-not-found": "No matching OpenStreetMap element found",
+        "route-inspector-osm-way": "OSM Way",
+        "route-inspector-way-tags": "Raw way tags",
         "route-quality-altitude": "Altitude coding",
         "route-quality-cost": "Cost coding",
         "route-quality-incline": "Incline coding",
@@ -273,6 +368,30 @@
         "strava-biking": "Show Strava biking segments",
         "strava-running": "Show Strava running segments",
         "strava-shortcut": "{{action}}\n({{key}} key to toggle layer, click to reload for current area)",
+        "state-indicator": {
+            "draw-routing": "Currently in “Draw Route” mode",
+            "draw-beeline": "Currently in “Draw Route” mode (Beeline)",
+            "locked": "The route is locked currently, no changes are possible until unlocked",
+            "inspector": "The Route Inspector is active and the route is locked.",
+            "measure": "The measure mode is active: measure distances and bearings on the map.",
+            "elevation": "The Elevation Inspector is active and shows the elevation under mouse cursor on the screen.",
+            "poi": "Currently in \u201cAdd POI\u201d mode: place POIs by clicking on the map.",
+            "nogo-circle": "Currently in \u201cDraw no-go area (circle)\u201d mode",
+            "nogo-polygon": "Currently in \u201cDraw no-go area (polygon)\u201d mode",
+            "opacity-warning": "Route is invisible (opacity set to 0)"
+        },
+        "state-indicator-bar": {
+            "draw-routing": "Route Drawing",
+            "draw-beeline": "Route Drawing (Beeline)",
+            "locked": "Route Locked",
+            "inspector": "Route Inspector",
+            "measure": "Measure",
+            "elevation": "Elevation Inspector",
+            "poi": "Add POI",
+            "nogo-circle": "No-Go Area: Circle",
+            "nogo-polygon": "No-Go Area: Polygon",
+            "opacity-warning": "Route Invisible"
+        },
         "toggle-beeline": "Toggle straight line",
         "zoomInTitle": "Zoom in",
         "zoomOutTitle": "Zoom out"
@@ -303,10 +422,10 @@
         "export": "Download",
         "export-tooltip": "Download route",
         "load": {
-            "nogos": "Load no-go areas",
-            "title": "Load",
-            "tooltip": "{{tracksAction}} ({{tracksKey}} key)\n{{trackAsRouteAction}} ({{trackAsRouteKey}})\n{{nogosAction}} ({{nogosKey}})",
-            "tracks": "Load tracks"
+            "nogos": "Import no-go areas",
+            "title": "Import",
+            "tooltip": "{{tracksAction}} ({{tracksKey}} key)\n{{nogosAction}} ({{nogosKey}})",
+            "tracks": "Import tracks or route"
         },
         "profile": {
             "Fastbike-lowtraffic-tertiaries": "Road Bike (minimal traffic) ⭐️⭐️⭐️",
@@ -317,6 +436,7 @@
             "m11n-gravel": "Gravel „m11n“ (more offroad) ⭐️⭐️⭐️",
             "quaelnix-gravel": "Gravel „quaelnix“ (less traffic)",
             "cxb-gravel": "Gravel „CXB“ (more offroad) ⭐️⭐️",
+            "gravel": "Gravel (Brouter)",
             "Trekking-tracks": "Gravel (fast) ⭐️⭐️",
             "mtb-zossebart": "MTB „Zossebart“ ⭐️⭐️",
             "mtb-zossebart-hard": "MTB „Zossebart“ (hard) ⭐️⭐️",
@@ -326,17 +446,19 @@
             "car-eco": "Car (efficient)",
             "car-fast": "Car (fast)",
             "car-vario": "Car (vario)",
+            "car-vario-nocost": "Car (vario, no cost)",
             "car-test": "Car (Test)",
             "dummy": "Dummy (empty)",
             "custom": "User Defined",
             "fastbike-asia-pacific": "Road Bike (Asia Pacific)",
-            "hiking-beta": "Hiking (beta)",
-            "hiking-mountain": "Hiking",
+            "hiking-beta": "Hiking",
+            "hiking-mountain": "Hiking (Mountain)",
             "moped": "Moped",
             "rail": "Railway",
             "randonneur": "Randonneur",
             "river": "River",
             "safety": "Safest Route",
+            "skating": "Inline Skating",
             "shortest": "Shortest Route",
             "ffmbb-long-distance-cycling": "FFMbyBicycle Long Distance",
             "trekking-ignore-cr": "Trekking (ignore cycling routes)",
@@ -374,11 +496,15 @@
             "Trekking-wet": "Trekking-wet"
         },
         "profile-tooltip": "\n({{key}} key to switch)",
+        "routes": "Routes",
         "share": "Share",
         "share-tooltip": "Share Route",
         "support": "Support ❤️",
         "supporters": "Hall of Fame",
         "tips": "Hints and Tricks"
+    },
+    "poi": {
+        "hint-move": "Move icon to change position"
     },
     "roundtrip": {
         "title": "Round Trip Planner",
@@ -406,6 +532,36 @@
         "import": "import favorites from file",
         "openfavorites": "open favorite list",
         "removeall": "delete all favorites"
+    },
+    "settings": {
+        "dialog": {
+            "title": "Settings",
+            "subtitle": {
+                "data-management": "Data Management",
+                "language": "Choose Language"
+            },
+            "label": {
+                "debug-mode": "Enable debug mode",
+                "route-color": "Color of Route Line",
+                "route-casing-color": "Color of Route Line Casing",
+                "route-inspector-osm-lookup": "Look up OpenStreetMap data in Route Inspector"
+            },
+            "button": {
+                "export": "Download Settings",
+                "import": "Import Settings",
+                "store-cloud": "Save Settings to Cloud",
+                "load-cloud": "Load Settings from Cloud"
+            },
+            "alert": {
+                "store-success": "Settings saved to cloud successfully!",
+                "store-error": "Failed to save settings: {{message}}",
+                "load-success": "Settings loaded from cloud successfully. The page will now reload.",
+                "load-error": "Failed to load settings: {{message}}",
+                "no-cloud-settings": "No settings found in the cloud yet. Please save your settings first.",
+                "overwrite-confirm": "This will overwrite your current settings. Are you sure?",
+                "invalid-file": "Invalid settings file."
+            }
+        }
     },
     "share": {
         "about-shortlinks": "About Shortlinks",
@@ -510,7 +666,9 @@
             "tooltip": "Analyse route"
         },
         "button": {
-            "about": "About"
+            "about": "About",
+            "whats-new": "What's new?",
+            "settings": "Settings"
         },
         "card": {
             "alternative": {
@@ -542,11 +700,15 @@
                     "share": {
                         "title": "Share as shortlink or QR Code, with WhatsApp etc.",
                         "label": "Share"
+                    },
+                    "manager": {
+                        "title": "Store and load routes",
+                        "label": "My Saved Routes"
                     }
                 },
-                "help1": "Download your route for navigation, for example as a GPX file (Shortcut <kbd>X</kbd>).",
+                "help1": "Download the current route for navigation, for example as a GPX file (Shortcut <kbd>X</kbd>).",
                 "help2": "Just share the route link, create a QR Code or save it in your bookmarks (Shortcut <kbd>A</kbd>).",
-                "title": "Download and share your route"
+                "title": "Manage and download routes"
             },
             "import": {
                 "button": {
@@ -555,16 +717,11 @@
                         "label": "Load No-Go Areas"
                     },
                     "track-load": {
-                        "title": "Load a GPX track, a KML file or a GeoJSON file and display it on the map (O)",
-                        "label": "Load Track"
-                    },
-                    "track-load-as-route": {
-                        "title": "Load a GPX track and automatically create a route from it (Shift-O)",
-                        "label": "Load Track as Route"
+                        "title": "Import a GPX track, a KML file or a GeoJSON file as a map layer, or create a route from it (O)",
+                        "label": "Import Tracks"
                     }
                 },
-                "help1": "Load a GPX track (or GeoJSON, KML, etc.) and display it on the map (Shortcut <kbd>O</kbd>).",
-                "help2": "You can also convert a GPX track into a route and continue planning directly. (Shortcut  <kbd>Shift</kbd>&nbsp;<kbd>O</kbd>).",
+                "help1": "Import one or more GPX tracks (or GeoJSON, KML, etc.) (Shortcut <kbd>O</kbd>). Import multiple tracks as map layers, or import a single track as a map layer or convert it into a route to continue planning directly.",
                 "help3": "If you have no-go areas as a GeoJSON file, you can easily import them (Shortcut<kbd>Shift</kbd>&nbsp;<kbd>N</kbd>).",
                 "title": "Load and Import"
             },
@@ -598,24 +755,6 @@
                     "button-elevation-profile": "Elevation Profile"
                 }
             },
-            "settings": {
-                "button": {
-                    "export": "Export",
-                    "import": "Import"
-                },
-                "help1": "By enabling “measurements on map” a button will be added to the left screen edge which allows you to measure distances and bearing angles on the map.",
-                "help2": "The colors for the route line and its casing can be adjusted, click a color swatch to open a color picker.",
-                "help3": "You can export your current settings (layers, colors, custom routing profile, etc.) and import them later or on another device.",
-                "title": "Settings",
-                "subtitle": {
-                    "data-management": "Data Management"
-                },
-                "label": {
-                    "enable-measurements": "Enable measurements on map",
-                    "route-color": "Color of Route Line",
-                    "route-casing-color": "Color of Route Line Casing"
-                }
-            },
             "support": {
                 "button": {
                     "hall-of-fame": {
@@ -646,10 +785,6 @@
             "title": "Data",
             "tooltip": "Show detailed route data table"
         },
-        "itinerary": {
-            "title": "Itinerary",
-            "tooltip": "Show itinerary"
-        },
         "layers": {
             "category": {
                 "base-layers": "Base layers",
@@ -660,16 +795,32 @@
                 "overpass": "Locations (POIs)",
                 "worldwide": "Worldwide",
                 "worldwide-international": "Worldwide international",
-                "worldwide-monolingual": "Worldwide monolingual"
+                "worldwide-monolingual": "Worldwide monolingual",
+                "configured-layers": "Configured layers"
             },
             "collapse": "Collapse all",
             "custom-layers": "Custom layers",
             "customize": "Add or remove custom layers",
             "expand": "Expand all",
-            "optional": "Add or remove optional layers",
-            "optional-layers": "More",
+            "filter-enabled": "Show enabled layers",
+            "search-label": "Search for layers by name",
+            "search-placeholder": "camping",
+            "optional": "To customize the map, it's possible to add or remove layers as needed. You can either browse the layers tree below or utilize the search field for easy navigation. To include layers in the base layer and overlay controls (see above), simply check the corresponding checkboxes in the tree. Once you’ve added the layers, you can activate them on the map at any time.",
+            "optional-layers": "More Layers",
             "overlay-opacity": "Overlay transparency",
             "overlay-opacity_plural": "Overlays transparency",
+            "new-group": "New Group",
+            "group-name-default": "Overlay Group",
+            "rename": "Rename",
+            "remove": "Delete Layer",
+            "move-up": "Move up",
+            "move-down": "Move down",
+            "move-out-of-group": "Move out of group",
+            "drag-handle-title": "Drag to reorder",
+            "cannot-remove-last-base-layer": "At least one base layer is required.",
+            "delete-group-confirm": "Remove group and keep layers in the list?",
+            "reset-layers": "Reset layers",
+            "reset-layers-confirm": "Reset layers, groups, and order to default configuration?",
             "single-opacity": "Show opacity sliders for each layer",
             "table": {
                 "URL": "URL/Query",
@@ -696,6 +847,7 @@
         "waypoints": {
             "btn-reset": "Remove custom routing",
             "btn-routing-options": "Adjust routing for this segment",
+            "copy-geo-uri": "Copy geo URI",
             "link-openstreetmap": "OpenStreetMap",
             "split-from-here": "Split route from here",
             "split-to-here": "Split route to here",
@@ -707,16 +859,31 @@
             "beeline": "Beeline Routing"
         }
     },
-    "trackasroute": {
+    "trackimport": {
         "browse": "Browse",
-        "explainpoi": "add waypoints as POIs",
-        "explaintracklayer": "add track as background layer",
-        "file": "Track file",
+        "create-route": "Create Route",
+        "drop-overlay-subtitle": "Imported tracks are shown as map overlays.",
+        "drop-overlay-title": "Drop track file(s) here",
+        "explainpoi": "Add waypoints as POIs",
+        "explainpoi-multi": "(applies to all imported files)",
+        "explaintracklayer": "Add track as background layer",
+        "file": "File(s)",
         "file-description": "Supported formats: GPX, KML, GeoJSON",
-        "number-of-via-points": "Number of via points",
-        "processing-message": "One moment please \uD83E\uDDD1\u200D\uD83C\uDFED",
-        "showpois": "POIs",
-        "title": "Create Route from Track",
+        "file-list-title": "Selected Tracks",
+        "file-too-large": "File too large: {{filename}}",
+        "import-as-layer": "Import as Layer(s)",
+        "import-options": "Import Options",
+        "import-pois": "Import Data",
+        "layer-color": "Layer Color",
+        "no-track-notice": "This file does not contain a track. Any waypoints will be imported as POIs, and any other content as a layer.",
+        "number-of-via-points": "Number of Via Points",
+        "processing-message": "One moment please 🧑‍🏭",
+        "route-adjustments": "Route Adjustments",
+        "route-adjustments-description": "It's possible to approximate a route from the selected track: choose number of via points, then click “Create Route” below. It will be calculated with the currently selected routing profile ({{profile}}).",
+        "route-link-found": "This file was created by bikerouter.de and contains a route link which can be restored.",
+        "route-link-load": "Restore Saved Route",
+        "showpois": "Import POIs",
+        "title": "Import Tracks or Route",
         "tracklayer": "Track Layer"
     },
     "warning": {
@@ -725,13 +892,20 @@
         "invalid-route-to": "Destination marker is too far from a route.",
         "no-response": "no response from server",
         "no-route-found": "Error: cannot find a route for given points. Maybe try to move them closer to roads?",
+        "route-point-in-nogo-area": "A route point is inside a no-go area. Move the point outside the no-go area and recalculate the route.",
         "profile-error": "Profile error: no or empty response from server",
         "strava-error": "Error getting Strava segments: {{error}}",
         "temporary-profile": "<strong>Note:</strong> Uploaded custom profiles are only cached temporarily on the server.<br/>Please save your edits to your computer or use the Custom Profile Management feature directly below.",
         "tracks-load-error": "Error loading tracks: {{error}}",
-        "upload-error": "Upload error: {{error}}"
+        "upload-error": "Upload error: {{error}}",
+        "webgl2-layer-unavailable": "The layer \"{{layer}}\" is unavailable because WebGL2 is not supported by your browser.",
+        "webgl2-layer-unavailable-generic": "The selected layer is unavailable because WebGL2 is not supported by your browser."
     },
     "whatsnew": {
+        "contact": "Contact:",
+        "support": "Support:",
+        "forum-thread": "Bikerouter Forum on MTB-News.de",
+        "mastodon": "@bikerouter on Mastodon",
         "dont-show-again": "Don't show again for this version",
         "new-version": "✨ A new version was released since your last visit!",
         "show-changes": "Show Changes",
@@ -752,5 +926,247 @@
         "enable": "Start measuring",
         "disable": "Stop measuring and remove measurements",
         "clear": "Clear Measurements"
+    },
+    "routemanager": {
+        "close": "Close",
+        "close-settings": "Back",
+        "cancel": "Cancel",
+        "logout": "Logout",
+        "title": "Route Manager",
+        "reload": "Reload routes and folders",
+        "help": {
+            "heading": "How the Router Manager Works",
+            "button": "Help",
+            "close": "Close this help text",
+            "line1": "The Route Manager lets you save your current route and load previously saved routes in Bikerouter.",
+            "line2": "You can either keep routes only in this browser or store them on Bikerouter’s servers.",
+            "line3": "If you want to save routes on Bikerouter’s servers, you need an account. <strong>No email address or personal data is required</strong> – just an unique access code.",
+            "line4": "When you register, Bikerouter generates an access code for you. Treat it like a password, as it grants access to all your saved routes. This code is displayed <strong>only once after registration</strong> and cannot be recovered if lost. It's possible to create a new access code at any time as long as you know the current access code.",
+            "line5": "<strong>Important:</strong> ‼️ If you lose your access code, you will no longer have access to your saved routes. The code cannot be recovered!",
+            "line6": "Browser storage works without an account. Once logged in to Bikerouter storage, you can also download archives and manage your access code."
+        },
+        "settings": {
+            "button": "Settings",
+            "title": "Settings",
+            "delete-account": "Delete Account",
+            "delete-account-confirm": "Do you really want to delete your account? Three days after initiating the deletion, your account and all routes will be permanently deleted.",
+            "delete-account-passphrase-prompt": "Please enter your access code to confirm account deletion:",
+            "delete-account-success": "Account deletion scheduled successfully. You will be logged out now. To cancel deletion, simply log in again within three days from now.",
+            "download-archive": "Download Route Archive",
+            "change-access-code": "Change Code",
+            "change-access-code-description": "Generate a new access code for your account. Once you sign in with the new code, the current one will no longer work.",
+            "current-access-code-label": "Current Access Code",
+            "current-access-code-placeholder": "Enter your current access code",
+            "generate-new-access-code": "Generate New Code",
+            "change-access-code-success": "New access code generated successfully!",
+            "change-access-code-warning": "⚠️ This is your new access code. As soon as you login with this code, your current access code will no longer work. Store this new code securely!",
+            "current-access-code-required": "Please enter your current access code.",
+            "copy-success": "Access code copied to clipboard!",
+            "copy-failed": "Failed to copy access code.",
+            "login-with-new-access-code": "Login with New Access Code",
+            "archive": {
+                "title": "Download Route Archive",
+                "description": "Request a archive (JSON) containing all your stored routes and folders. Generating the archive may take a few moments depending on the amount.",
+                "button-create": "Create Archive",
+                "status-processing": "Generating your archive. Please wait...",
+                "status-available": "Your archive is ready!",
+                "button-download-url": "Download Archive",
+                "warning-expires": "This download link is valid for 24 hours.",
+                "status-error": "An error occurred while creating the archive."
+            },
+            "import": {
+                "title": "Import Route Archive",
+                "description": "Import routes and folders from a previously exported JSON file. WARNING: All existing data will be deleted!",
+                "button-import": "Import",
+                "status-success": "Import started successfully!",
+                "status-success-info": "Your routes and folders will appear within a few minutes in the Route Manager. You'll have to reload the page to see the changes.",
+                "status-error": "An error occurred while starting the import.",
+                "parse-error": "Failed to parse the selected file. Please make sure it's a valid JSON export.",
+                "read-error": "Failed to read the selected file."
+            },
+            "storage": {
+                "title": "Storage Settings",
+                "description": "Choose where routes and folders live. Browser storage keeps everything on this device only. Bikerouter storage uses your access code and allows using your routes on multiple devices.",
+                "button": "Storage Settings",
+                "option-api": "Use Bikerouter Storage",
+                "option-local": "Use This Browser Only",
+                "local-unavailable": "Browser storage not available",
+                "using-local": "Currently saving in this browser",
+                "using-api": "Currently saving in Bikerouter storage",
+                "export-button": "Export Data",
+                "import-button": "Import Data",
+                "clear-button": "Clear Browser Data",
+                "export-success": "Data exported successfully!",
+                "export-error": "Failed to export data: {{message}}",
+                "import-success": "Data imported successfully!",
+                "import-error": "Failed to import data: {{message}}",
+                "import-read-error": "Failed to read file.",
+                "import-confirm": "This will replace all browser-stored routes and folders. Continue?",
+                "clear-success": "Browser data cleared successfully!",
+                "clear-error": "Failed to clear data: {{message}}",
+                "clear-confirm": "Are you sure you want to clear all browser-stored route data? This cannot be undone.",
+                "remote-info": "To use Bikerouter storage, sign in with your access code.",
+                "login-button": "Login to Bikerouter Storage",
+                "switch-confirm": "Switching to Bikerouter storage requires login. Your browser-stored data will remain on this device. Continue?",
+                "switch-to-remote-title": "Switch to Bikerouter Storage",
+                "switch-to-remote-info": "You're about to switch from browser storage on this device to Bikerouter storage.",
+                "switch-to-remote-bullet1": "Your existing browser-stored routes and folders will remain on this device",
+                "switch-to-remote-bullet2": "You need to sign in to access Bikerouter storage",
+                "switch-to-remote-bullet3": "You can switch back to browser storage at any time",
+                "login-now": "Use Bikerouter Storage",
+                "stay-local": "Stay with Browser Storage",
+                "switch-to-local-title": "Switch to Browser Storage",
+                "switch-to-local-info": "You're about to switch from Bikerouter storage to storage in this browser.",
+                "switch-to-local-warning": "⚠️ Your Bikerouter routes stay on the server. You will have access to them after signing in again.",
+                "continue-local": "Use This Browser",
+                "stay-remote": "Stay with Bikerouter Storage"
+            },
+            "danger-zone": {
+                "title": "Danger Zone",
+                "warning": "All routes and folders will be permanently deleted three days after initiating the account deletion. To cancel deletion of your account and your routes, simply log in again within this three-day period."
+            }
+        },
+        "storage-choice": {
+            "title": "Choose where to save routes",
+            "description": "The Route Manager allows you to store your planned routes. You can keep routes only on this device or sign in to save them in Bikerouter storage.",
+            "api-title": "Bikerouter storage",
+            "api-detail1": "Sign in with your access code or register a new account",
+            "api-detail2": "No personal data like an email address is required",
+            "api-detail3": "Good if you want to have your routes available on multiple devices",
+            "api-detail4": "Use account-only features like route previews",
+            "local-title": "This browser only",
+            "local-detail1": "No login required",
+            "local-detail2": "Routes stay on this device and in this browser",
+            "local-detail3": "Export/import anytime for backup or manual transfer",
+            "local-detail4": "No route preview images",
+            "local-button": "Use This Browser Only"
+        },
+        "save": {
+            "button": "Save Route",
+            "button-save-form": "Save Route Here",
+            "create-folder": "Create new folder",
+            "folder-label": "Folder (optional)",
+            "root-folder": "No Folder",
+            "route-name-label": "Route Name (optional)",
+            "route-name-placeholder": "Paris - Liège",
+            "save-as-new": "Save as New Route",
+            "overwrite-existing": "Overwrite Existing Route",
+            "select-route": "Select route to overwrite",
+            "unnamed-route": "Unnamed Route",
+            "overwrite-button": "Overwrite Route",
+            "confirm-overwrite": "Are you sure you want to overwrite route “{{name}}”? This cannot be undone."
+        },
+        "prompt": {
+            "new-folder-name": "Enter new folder name:",
+            "confirm-delete-folder": "Are you sure you want to delete folder \"{{name}}\"? Routes inside will be moved to root.",
+            "confirm-load-route": "Load route into planner?\n ⚠️ Your current planned route and settings will be overwritten.",
+            "confirm-delete-route": "Are you sure you want to delete \"{{name}}\"?"
+        },
+        "error": {
+            "create-folder": "Failed to create folder: {{message}}",
+            "save-route": "Error saving route: {{message}}",
+            "rename-folder": "Failed to rename folder: {{message}}",
+            "delete-folder": "Failed to delete folder: {{message}}",
+            "move-route": "Failed to move route: {{message}}",
+            "update-route": "Failed to update route: {{message}}",
+            "delete-route": "Failed to delete route: {{message}}",
+            "load-route": "Failed to load route: {{message}}",
+            "custom-profile-incompatible": "⚠️ The custom routing profile attached to this route is no longer supported by the routing engine ({{message}}). The default profile will be used instead.",
+            "unauthorized": "Authentication failed. Please check your access code.",
+            "not-found": "Resource not found.",
+            "validation": "Invalid data provided.",
+            "rate-limit": "Too many requests. Please try again later.",
+            "server": "Server error. Please try again later.",
+            "network": "Network error. Please check your internet connection.",
+            "generic": "An error occurred. Please try again.",
+            "invalid-passphrase": "Invalid access code. Please try again.",
+            "key-not-found": "Authentication key not found.",
+            "folder-not-found": "Folder not found.",
+            "route-not-found": "Route not found."
+        },
+        "list": {
+            "loading": "Loading routes...",
+            "retry": "Retry",
+            "empty-hint": "Once a route has been planned, it can be saved here.",
+            "add-folder": "Add Folder",
+            "rename-folder": "Rename folder",
+            "delete-folder": "Delete folder",
+            "rename-current-folder": "Rename current folder",
+            "delete-current-folder": "Delete current folder",
+            "search-placeholder": "Search routes...",
+            "clear-search": "Clear search",
+            "sort-alphabetical": "A–Z",
+            "sort-date": "Date",
+            "sort-asc": "Ascending",
+            "sort-desc": "Descending",
+            "up": "Up",
+            "home": "Home",
+            "routes_count_one": "1 Route",
+            "routes_count": "{{count}} Routes",
+            "subfolders_count_one": "1 Subfolder",
+            "subfolders_count": "{{count}} Subfolders",
+            "view-grid": "Grid view",
+            "view-list-expanded": "Expanded list",
+            "view-list-compact": "Compact list",
+            "folders": "Folders",
+            "all-routes": "Home",
+            "no-folders": "No folders yet",
+            "actions-menu": "Actions",
+            "filter-active": "Filter active",
+            "columns": {
+                "route": "Route",
+                "distance": "Distance",
+                "time": "Time",
+                "elevation": "Elevation",
+                "activity": "Profile",
+                "date-saved": "Date",
+                "actions": "Actions"
+            },
+            "route": {
+                "name": "Name",
+                "name-placeholder": "Paris - Liège",
+                "unnamed": "Unnamed Route",
+                "description": "Description",
+                "description-placeholder": "Optional description",
+                "folder": "Folder",
+                "root": "No Folder",
+                "save": "Save",
+                "cancel": "Cancel",
+                "edit": "Edit route",
+                "delete": "Delete route",
+                "overwrite-with-current": "Overwrite with current route",
+                "confirm-overwrite": "Are you sure you want to overwrite route “{{name}}” with the currently planned route? This cannot be undone.",
+                "distance": "Distance",
+                "duration": "Duration",
+                "ascend": "Ascend",
+                "profile": "Profile",
+                "unknown": "Unknown",
+                "preview": "Route Preview",
+                "elevation": "Elevation Preview",
+                "drag-handle": "Drag to move into a folder"
+            }
+        },
+        "login": {
+            "title": "Login",
+            "passphrase-placeholder": "Access Code",
+            "button-login": "Login",
+            "button-logging-in": "Logging in...",
+            "no-account": "Don't have an account?",
+            "register-link": "Register",
+            "already-have-account": "Already have an account?",
+            "login-in-new-account": "Use the new access code:",
+            "login-link": "Login"
+        },
+        "register": {
+            "title": "Register",
+            "explanation": "Registration will generate an access code for you.",
+            "button-register": "Register",
+            "button-generating": "Generating...",
+            "new-passphrase": "New Access Code:",
+            "button-copy": "Copy",
+            "button-copied": "Copied!",
+            "warning-title": "READ CAREFULLY:",
+            "warning-text": "Please save this access code! This is your only way to access your stored routes. If you lose this access code all stored routes are no longer accessible."
+        }
     }
 }
