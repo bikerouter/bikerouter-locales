@@ -3,6 +3,8 @@
         "hosted": "Bikerouter est hébergé et développé par <a href='https://marcusjaschen.com/' target='_blank'>Marcus Jaschen</a>. Contact : <a href='https://en.osm.town/@bikerouter' target='_blank' rel='me'>@bikerouter@en.osm.town</a>",
         "imprint": "Mentions légales",
         "introduction": "Bikerouter est le moyen idéal pour planifier des itinéraires cyclables en ligne et est basé sur BRouter-Web. <b>BRouter-Web est un projet de Norbert Renner,</b> le moteur de routage <b>BRouter a été développé par Arndt Brenschede.</b>",
+        "language-switch-label": "bikerouter.de en",
+        "language-switch-more": "Plus de langues…",
         "language-switch-reload": "(la page va se recharger)",
         "license": "Licences et informations complémentaires",
         "link-manual-de": "Manuel 🇩🇪",
@@ -191,6 +193,15 @@
         "opacity-slider-title": "Ajuster l'opacité de la surcouche",
         "color-picker-title": "Choisir la couleur de la surcouche",
         "custom-layer-italic-hint": "Les calques personnalisés sont affichés en <i>italique</i> dans la sélection.",
+        "mapillary": {
+            "loading": "Chargement de la photo...",
+            "open-in-mapillary": "Ouvrir dans Mapillary",
+            "load-error": "Impossible de charger l'image Mapillary.",
+            "missing-key": "La clé API Mapillary n'est pas configurée.",
+            "panorama": "Panorama à 360°",
+            "expand": "Agrandir la photo",
+            "restore": "Réduire la photo"
+        },
         "opencampingmap": {
             "category": {
                 "nudist": "Naturiste",
@@ -294,6 +305,7 @@
             "hillshading": "Ombrage du relief",
             "hillshading-mapterhorn": "Ombrage du relief",
             "hillshading-opaque": "Ombrage du relief (opaque)",
+            "mapillary-photos": "Photos Mapillary",
             "osm": "OpenStreetMap",
             "osmde": "OpenStreetMap.de",
             "outdoors": "Outdoors (Thunderforest)",
@@ -656,7 +668,8 @@
         "button": {
             "about": "À propos",
             "whats-new": "Nouveautés",
-            "settings": "Paramètres"
+            "settings": "Paramètres",
+            "language": "Choisir la langue"
         },
         "card": {
             "alternative": {
@@ -885,7 +898,9 @@
         "strava-error": "Erreur lors de la récupération des segments Strava : {{error}}",
         "temporary-profile": "<strong>Remarque :</strong> Les profils personnalisés téléversés ne sont mis en mémoire tampon que temporairement sur le serveur.<br/>Veuillez enregistrer vos modifications sur votre ordinateur ou utiliser la gestion des profils personnalisés directement ci-dessous.",
         "tracks-load-error": "Erreur lors du chargement des traces : {{error}}",
-        "upload-error": "Erreur de téléversement : {{error}}"
+        "upload-error": "Erreur de téléversement : {{error}}",
+        "webgl2-layer-unavailable": "La couche \"{{layer}}\" n'est pas disponible car WebGL2 n'est pas pris en charge par votre navigateur.",
+        "webgl2-layer-unavailable-generic": "La couche sélectionnée n'est pas disponible car WebGL2 n'est pas pris en charge par votre navigateur."
     },
     "whatsnew": {
         "contact": "Contact :",
@@ -893,13 +908,20 @@
         "forum-thread": "Forum Bikerouter sur MTB-News.de",
         "mastodon": "@bikerouter sur Mastodon",
         "dont-show-again": "Ne plus afficher pour cette version",
+        "dont-show-again-post": "Ne plus afficher pour cet article",
+        "dont-show-again-update": "Ne plus afficher pour ces mises à jour",
         "new-version": "✨ Une nouvelle version a été publiée depuis votre dernière visite !",
+        "new-post": "✨ Un nouvel article a été publié depuis votre dernière visite !",
+        "new-version-and-post": "✨ Une nouvelle version et un nouvel article ont été publiés depuis votre dernière visite !",
         "show-changes": "Afficher les modifications",
+        "show-post": "Lire l'article",
+        "show-updates": "Afficher les mises à jour",
         "title": "Nouveautés",
         "type-added": "Ajouté",
         "type-changed": "Modifié",
         "type-fixed": "Corrigé",
         "type-info": "Info",
+        "type-post": "Article",
         "type-removed": "Supprimé",
         "full-changelog": "Afficher le journal complet des modifications"
     },
